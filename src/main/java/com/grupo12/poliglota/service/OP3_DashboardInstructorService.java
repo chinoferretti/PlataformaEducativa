@@ -3,6 +3,7 @@ package com.grupo12.poliglota.service;
 import com.grupo12.poliglota.dto.DashboardInstructorResponse;
 import lombok.RequiredArgsConstructor;
 import org.bson.Document;
+import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -42,7 +43,7 @@ public class OP3_DashboardInstructorService {
 
         // ── 1. CONSULTA A MONGODB ──────────────────────────────────────────
         // Busca el documento del curso en la colección "cursos"
-        Query query = new Query(Criteria.where("curso_id").is(cursoId));
+        Query query = new Query(Criteria.where("_id").is(new ObjectId(cursoId)));
         Document cursoDoc = mongoTemplate.findOne(query, Document.class, "cursos");
 
         if (cursoDoc == null) {
@@ -51,16 +52,12 @@ public class OP3_DashboardInstructorService {
 
         String nombreCurso  = cursoDoc.getString("nombre");
         String descripcion  = cursoDoc.getString("descripcion");
-        String instructorId = cursoDoc.getString("instructor_id");
+
+        Object instObj = cursoDoc.get("instructor_id");
+        String instructorId = instObj != null ? instObj.toString() : null;
 
         // Cantidad de inscriptos: puede ser un campo numérico o el tamaño de una lista
-        int totalInscriptos = 0;
-        Object inscriptos = cursoDoc.get("inscriptos");
-        if (inscriptos instanceof List<?>) {
-            totalInscriptos = ((List<?>) inscriptos).size();
-        } else if (inscriptos instanceof Integer) {
-            totalInscriptos = (Integer) inscriptos;
-        }
+        int totalInscriptos = cursoDoc.getInteger("total_inscriptos", 0);
 
         // ── 2. CONSULTAS A REDIS ───────────────────────────────────────────
 
