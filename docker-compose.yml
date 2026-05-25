@@ -1,0 +1,34 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: mongo_poliglota
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: plataforma_educativa
+    volumes:
+      - mongo_data:/data/db
+
+  redis:
+    image: redis:7
+    container_name: redis_poliglota
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  neo4j:
+    image: neo4j:5
+    container_name: neo4j_poliglota
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: neo4j/password123
+    volumes:
+      - neo4j_data:/data
+
+volumes:
+  mongo_data:
+  redis_data:
+  neo4j_data:
