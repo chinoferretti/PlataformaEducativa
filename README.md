@@ -142,7 +142,26 @@ Flujo:
 { "cursoId": "...", "puntaje": 8.5, "comentario": "OK", "instructorId": "..." }
 ```
 
-### OP-5 · Recomendación de próximo curso · **pendiente**
+### OP-5 · Recomendación de próximo curso · 3 motores
+
+`GET /api/operaciones/op5/recomendar-curso`
+
+Params:
+- `alumnoId` — ObjectId hex del alumno
+- `idioma` *(opcional)* — filtra cursos por idioma (ej: `español`)
+- `modalidad` *(opcional)* — filtra cursos por modalidad (ej: `online`)
+
+Combina:
+- **Neo4j**   → determina qué cursos tiene desbloqueados el alumno: todos sus prerrequisitos completados y que él todavía no cursó
+- **MongoDB** → trae los detalles de esos cursos (nombre, descripción, idioma, modalidad, nivel) y aplica los filtros opcionales
+- **Redis**   → enriquece cada resultado con alumnos activos ahora (SET) y puntaje máximo del ranking (SORTED SET)
+
+Si el alumno nunca completó ningún curso (no existe como nodo en Neo4j), se devuelven los cursos sin prerrequisitos, que están disponibles para todos.
+
+```bash
+curl "http://localhost:8080/api/operaciones/op5/recomendar-curso?alumnoId=69da83d24fd7e59767eb9640"
+curl "http://localhost:8080/api/operaciones/op5/recomendar-curso?alumnoId=69da83d24fd7e59767eb9640&idioma=español&modalidad=online"
+```
 
 ---
 
