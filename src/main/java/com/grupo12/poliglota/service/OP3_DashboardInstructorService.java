@@ -1,0 +1,84 @@
+package com.grupo12.poliglota.service;
+
+import com.grupo12.poliglota.dto.DashboardInstructorResponse;
+import lombok.RequiredArgsConstructor;
+import org.bson.Document;
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+/*
+ * OP-3: Dashboard del Instructor
+ *
+ * Motores usados:
+ *   - MongoDB  → datos estáticos del curso (nombre, descripción, inscriptos)
+ *   - Redis    → estado en tiempo real (activos, ranking, cola de corrección)
+ *
+ * Justificación de la combinación:
+ *   MongoDB guarda el historial y la estructura del curso (datos que no cambian
+ *   cada segundo). Redis guarda el estado operativo en tiempo real con latencia
+ *   sub-milisegundo, ideal para un dashboard que se refresca frecuentemente.
+ */
+
+@Service
+@RequiredArgsConstructor
+public class OP3_DashboardInstructorService {
+
+    private final MongoTemplate mongoTemplate;
+    private final RedisService redisService;
+
+    public DashboardInstructorResponse obtenerDashboard(String cursoId) { // Devuelve toda la información relevante para el dashboard del instructor sobre un curso específico, combinando datos de MongoDB y Redis.
+
+        // 1. CONSULTA A MONGODB 
+        if (!org.bson.types.ObjectId.isValid(cursoId)) {
+            throw new IllegalArgumentException("cursoId no es un ObjectId válido: " + cursoId);
+        }
+        Query query = new Query(Criteria.where("_id").is(new ObjectId(cursoId)));
+        Document cursoDoc = mongoTemplate.findOne(query, Document.class, "cursos");
+
+        if (cursoDoc == null) {
+            throw new IllegalArgumentException("Curso no encontrado en MongoDB: " + cursoId);
+        }
+
+        String nombreCurso  = cursoDoc.getString("nombre");
+        String descripcion  = cursoDoc.getString("descripcion");
+
+        Object instObj = cursoDoc.get("instructor_id");
+        String instructorId = instObj != null ? instObj.toString() : null;
+
+        // Cantidad de inscriptos: puede ser un campo numérico o el tamaño de una lista
+        int totalInscriptos = cursoDoc.getInteger("total_inscriptos", 0);
+
+        // 2. CONSULTAS A REDIS 
+
+        // SET: alumnos conectados en este momento
+        Set<String> idsActivos   = redisService.getAlumnosActivos(cursoId);
+        Long cantidadActivos     = redisService.cantidadActivos(cursoId);
+
+        // SORTED SET: top 10 del ranking
+        Set<String> top10Set     = redisService.getTop10(cursoId);
+        List<String> top10       = new ArrayList<>(top10Set != null ? top10Set : List.of());
+
+        // LIST: entregas esperando corrección
+        Long pendientes          = redisService.cantidadPendientes(cursoId);
+
+        // 3. ARMADO DE LA RESPUESTA 
+        return DashboardInstructorResponse.builder()
+                .cursoId(cursoId)
+                .nombreCurso(nombreCurso)
+                .descripcion(descripcion)
+                .instructorId(instructorId)
+                .totalInscriptos(totalInscriptos)
+                .alumnosActivosAhora(cantidadActivos)
+                .idsAlumnosActivos(idsActivos)
+                .top10Ranking(top10)
+                .entregasPendientesCorreccion(pendientes != null ? pendientes : 0L)
+                .build();
+    }
+}
