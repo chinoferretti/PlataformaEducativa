@@ -44,6 +44,21 @@ public class RedisService {
         return redisTemplate.opsForHash().entries(key);
     }
 
+    /** Indica si existe el HASH de sesión activa para el par alumno/curso. */
+    public boolean existeSesion(String alumnoId, String cursoId) {
+        String key = "sesion:" + alumnoId + ":" + cursoId;
+        Boolean has = redisTemplate.hasKey(key);
+        return Boolean.TRUE.equals(has);
+    }
+
+    /** Refresca el TTL de la sesión a 2 horas. Se llama desde OP-1 al consultar el panel. */
+    public void refrescarTTLSesion(String alumnoId, String cursoId) {
+        String key = "sesion:" + alumnoId + ":" + cursoId;
+        if (Boolean.TRUE.equals(redisTemplate.hasKey(key))) {
+            redisTemplate.expire(key, 2, TimeUnit.HOURS);
+        }
+    }
+
     public void cerrarSesion(String alumnoId, String cursoId) { // Eliminamos la sesión del alumno para el curso cuando cierra sesión o se desconecta
         String key = "sesion:" + alumnoId + ":" + cursoId;
         redisTemplate.delete(key);

@@ -1,8 +1,13 @@
 package com.grupo12.poliglota.controller;
 
+import com.grupo12.poliglota.dto.CierreSesionRequest;
+import com.grupo12.poliglota.dto.CierreSesionResponse;
 import com.grupo12.poliglota.dto.CorreccionRequest;
 import com.grupo12.poliglota.dto.CorreccionResponse;
 import com.grupo12.poliglota.dto.DashboardInstructorResponse;
+import com.grupo12.poliglota.dto.PanelAlumnoResponse;
+import com.grupo12.poliglota.service.OP1_PanelAlumnoService;
+import com.grupo12.poliglota.service.OP2_CierreSesionService;
 import com.grupo12.poliglota.service.OP3_DashboardInstructorService;
 import com.grupo12.poliglota.service.OP4_CorreccionEvaluacionService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -29,8 +34,85 @@ Persona 3  → OP-5        (Neo4j + MongoDB + Redis)
      description = "Operaciones de negocio que combinan múltiples motores de base de datos")
 public class OperacionesController {
 
+    private final OP1_PanelAlumnoService op1Service;
+    private final OP2_CierreSesionService op2Service;
     private final OP3_DashboardInstructorService op3Service;
     private final OP4_CorreccionEvaluacionService op4Service;
+
+    @GetMapping("/op1/panel-alumno") // OP-1: Panel de alumno en cursado activo (MongoDB + Neo4j + Redis)
+    @Operation(
+        summary = "OP-1: Panel de alumno en cursado activo",
+        description = """
+                Operación poliglota que combina los **3 motores**:
+                - **MongoDB** → inscripción, módulos completados, puntajes históricos
+                - **Neo4j**   → cursos que se habilitan si aprueba este, pasos a certificación objetivo
+                - **Redis**   → estado de sesión activa (HASH) + posición en ranking (SORTED SET)
+
+                Si no hay sesión activa en Redis se devuelven los demás campos con
+                `sesionActiva = null`. Cada consulta al panel **refresca el TTL** del HASH
+                a 2h (mirar el panel cuenta como actividad).
+                """
+    )
+    @ApiResponses({
+        @ApiResponse(responseCode = "200", description = "Panel armado correctamente",
+                     content = @Content(schema = @Schema(implementation = PanelAlumnoResponse.class))),
+        @ApiResponse(responseCode = "400", description = "alumnoId o cursoId no son ObjectId válidos"),
+        @ApiResponse(responseCode = "404", description = "No existe inscripción para ese alumno/curso")
+    })
+    public ResponseEntity<?> getPanelAlumno(
+            @Parameter(description = "ObjectId hex del alumno", required = true)
+            @RequestParam String alumnoId,
+            @Parameter(description = "ObjectId hex del curso", required = true)
+            @RequestParam String cursoId,
+            @Parameter(description = "ID de la ruta de certificación objetivo (ej: CERT-MED). Opcional.")
+            @RequestParam(required = false) String certObjetivo) {
+        try {
+            PanelAlumnoResponse panel = op1Service.obtenerPanel(alumnoId, cursoId, certObjetivo);
+            return ResponseEntity.ok(panel);
+        } catch (IllegalArgumentException e) {
+            // No existe inscripción o IDs inválidos
+            String msg = e.getMessage();
+            if (msg != null && msg.startsWith("No existe inscripción")) {
+                return ResponseEntity.status(404).body(msg);
+            }
+            return ResponseEntity.badRequest().body(msg);
+        }
+    }
+
+    @PostMapping("/op2/cerrar-sesion") // OP-2: Cierre de sesión y persistencia de progreso (3 motores)
+    @Operation(
+        summary = "OP-2: Cierre de sesión y persistencia de progreso",
+        description = """
+                Coordina los **3 motores** al cerrar una sesión de cursado:
+                1. **Redis** → HGETALL del HASH de sesión
+                2. **MongoDB** → upsert idempotente en `progreso_modulos` por
+                   (alumno_id, curso_id, orden_modulo) + actualiza porcentaje en `inscripciones`
+                3. **Redis** → si fue evaluación con puntaje > 0, ZADD al ranking
+                4. **Neo4j** → si el curso quedó 100% completado, crea (Alumno)-[:COMPLETO]->(Curso)
+                5. **Redis** → DEL del HASH + SREM del SET de activos
+
+                **Coherencia:** si Mongo falla → 500 y el HASH NO se borra (reintentable).
+                Si Neo4j falla → 200 con `gradoConsistencia = "parcial"` y un aviso en la respuesta.
+                """
+    )
+    @ApiResponses({
+        @ApiResponse(responseCode = "200", description = "Sesión cerrada y progreso persistido",
+                     content = @Content(schema = @Schema(implementation = CierreSesionResponse.class))),
+        @ApiResponse(responseCode = "400", description = "IDs inválidos"),
+        @ApiResponse(responseCode = "404", description = "No hay sesión activa en Redis"),
+        @ApiResponse(responseCode = "500", description = "Fallo al persistir en MongoDB - reintentable")
+    })
+    public ResponseEntity<?> cerrarSesion(@RequestBody CierreSesionRequest req) {
+        try {
+            return ResponseEntity.ok(op2Service.cerrarSesion(req));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        } catch (IllegalStateException e) {
+            return ResponseEntity.status(404).body(e.getMessage());
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(500).body(e.getMessage());
+        }
+    }
 
     @GetMapping("/op3/dashboard-instructor") // OP-3: Dashboard del Instructor  (MongoDB + Redis)
     @Operation(
