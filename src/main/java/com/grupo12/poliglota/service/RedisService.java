@@ -1,6 +1,7 @@
 package com.grupo12.poliglota.service;
 
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Service;
 import lombok.RequiredArgsConstructor;
 import java.util.concurrent.TimeUnit;
@@ -85,6 +86,20 @@ public class RedisService {
     public Set<String> getAlumnosPorRango(String cursoId, double minPuntaje, double maxPuntaje) { // Obtenemos los alumnos que tienen un puntaje dentro de un rango específico en el ranking del curso
         String key = "ranking:" + cursoId;
         return redisTemplate.opsForZSet().rangeByScore(key, minPuntaje, maxPuntaje);
+    }
+
+    /**
+     * Devuelve el puntaje más alto del ranking del curso (el score del primer puesto).
+     * Usado en OP-5 para mostrar el nivel de competencia del curso al recomendar.
+     * Retorna null si el ranking está vacío (nadie tiene puntaje todavía).
+     */
+    public Double getPuntajeMaximo(String cursoId) {
+        String key = "ranking:" + cursoId;
+        // reverseRangeWithScores con rango 0-0 trae solo el elemento con mayor score
+        Set<ZSetOperations.TypedTuple<String>> top =
+                redisTemplate.opsForZSet().reverseRangeWithScores(key, 0, 0);
+        if (top == null || top.isEmpty()) return null;
+        return top.iterator().next().getScore();
     }
 
     // ─── COLA DE CORRECCIÓN (LIST) ───────────────────────────

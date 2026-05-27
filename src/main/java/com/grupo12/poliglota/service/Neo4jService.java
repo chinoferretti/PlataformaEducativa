@@ -66,6 +66,38 @@ public class Neo4jService {
         }
     }
 
+    // ── OP-5 ──────────────────────────────────────────────────────────────
+
+    /**
+     * Devuelve los cursos que el alumno puede cursar a continuación:
+     *   - No los completó todavía (no existe relación COMPLETO hacia ese curso)
+     *   - Tiene completados TODOS sus prerrequisitos (relaciones REQUIERE satisfechas)
+     *
+     * Caso borde: si el alumno nunca completó un curso (su nodo Alumno no existe
+     * en Neo4j), ALL() sobre lista vacía devuelve true → se retornan solo los
+     * cursos sin prerrequisitos, que son los únicos disponibles para un alumno nuevo.
+     */
+    public List<Map<String, Object>> cursosDesbloqueadosParaAlumno(String alumnoId) {
+        String cypher = """
+                MATCH (candidato:Curso)
+                WHERE NOT EXISTS { MATCH (:Alumno {id: $alumnoId})-[:COMPLETO]->(candidato) }
+                WITH candidato
+                OPTIONAL MATCH (candidato)-[:REQUIERE]->(req:Curso)
+                WITH candidato, collect(req.id) AS idsRequeridos
+                WHERE ALL(rid IN idsRequeridos WHERE EXISTS {
+                    MATCH (:Alumno {id: $alumnoId})-[:COMPLETO]->(:Curso {id: rid})
+                })
+                RETURN candidato.id AS id, candidato.nombre AS nombre
+                ORDER BY candidato.nombre
+                """;
+        List<Map<String, Object>> out = new ArrayList<>();
+        try (Session s = driver.session()) {
+            Result r = s.run(cypher, Map.of("alumnoId", alumnoId));
+            r.forEachRemaining(rec -> out.add(rec.asMap()));
+        }
+        return out;
+    }
+
     // ── OP-2 ──────────────────────────────────────────────────────────────
 
     /**

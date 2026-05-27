@@ -6,10 +6,12 @@ import com.grupo12.poliglota.dto.CorreccionRequest;
 import com.grupo12.poliglota.dto.CorreccionResponse;
 import com.grupo12.poliglota.dto.DashboardInstructorResponse;
 import com.grupo12.poliglota.dto.PanelAlumnoResponse;
+import com.grupo12.poliglota.dto.RecomendacionResponse;
 import com.grupo12.poliglota.service.OP1_PanelAlumnoService;
 import com.grupo12.poliglota.service.OP2_CierreSesionService;
 import com.grupo12.poliglota.service.OP3_DashboardInstructorService;
 import com.grupo12.poliglota.service.OP4_CorreccionEvaluacionService;
+import com.grupo12.poliglota.service.OP5_RecomendacionCursoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -38,6 +40,7 @@ public class OperacionesController {
     private final OP2_CierreSesionService op2Service;
     private final OP3_DashboardInstructorService op3Service;
     private final OP4_CorreccionEvaluacionService op4Service;
+    private final OP5_RecomendacionCursoService op5Service;
 
     @GetMapping("/op1/panel-alumno") // OP-1: Panel de alumno en cursado activo (MongoDB + Neo4j + Redis)
     @Operation(
@@ -141,6 +144,42 @@ public class OperacionesController {
             return ResponseEntity.ok(response);
         } catch (IllegalArgumentException e) {
             return ResponseEntity.notFound().build();
+        }
+    }
+
+    @GetMapping("/op5/recomendar-curso") // OP-5: Recomendación de próximo curso (Neo4j + MongoDB + Redis)
+    @Operation(
+        summary = "OP-5: Recomendación de próximo curso",
+        description = """
+                Operación poliglota que combina los **3 motores**:
+                - **Neo4j**   → cursos desbloqueados: prerrequisitos completados por el alumno
+                               y que todavía no cursó
+                - **MongoDB** → detalles de cada curso (nombre, descripción, idioma, modalidad, nivel)
+                               con filtros opcionales por idioma y/o modalidad
+                - **Redis**   → contexto en tiempo real: alumnos activos ahora en ese curso
+                               y puntaje máximo del ranking
+
+                Si el alumno nunca completó un curso (no existe en Neo4j), se devuelven
+                los cursos sin prerrequisitos, que están disponibles para todos.
+                """
+    )
+    @ApiResponses({
+        @ApiResponse(responseCode = "200", description = "Recomendaciones generadas correctamente",
+                     content = @Content(schema = @Schema(implementation = RecomendacionResponse.class))),
+        @ApiResponse(responseCode = "400", description = "alumnoId no es un ObjectId válido")
+    })
+    public ResponseEntity<?> recomendarCurso(
+            @Parameter(description = "ObjectId hex del alumno", required = true)
+            @RequestParam String alumnoId,
+            @Parameter(description = "Filtrar por idioma del curso (ej: español). Opcional.")
+            @RequestParam(required = false) String idioma,
+            @Parameter(description = "Filtrar por modalidad del curso (ej: online). Opcional.")
+            @RequestParam(required = false) String modalidad) {
+        try {
+            RecomendacionResponse response = op5Service.recomendar(alumnoId, idioma, modalidad);
+            return ResponseEntity.ok(response);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
 
