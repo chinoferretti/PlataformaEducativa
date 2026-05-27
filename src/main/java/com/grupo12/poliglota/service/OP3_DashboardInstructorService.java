@@ -4,77 +4,66 @@ import com.grupo12.poliglota.dto.DashboardInstructorResponse;
 import lombok.RequiredArgsConstructor;
 import org.bson.Document;
 import org.bson.types.ObjectId;
-import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /*
- * OP-3: Dashboard del Instructor
+ * OP-3: Dashboard del Instructor (2 motores).
  *
- * Motores usados:
- *   - MongoDB  → datos estáticos del curso (nombre, descripción, inscriptos)
- *   - Redis    → estado en tiempo real (activos, ranking, cola de corrección)
- *
- * Justificación de la combinación:
- *   MongoDB guarda el historial y la estructura del curso (datos que no cambian
- *   cada segundo). Redis guarda el estado operativo en tiempo real con latencia
- *   sub-milisegundo, ideal para un dashboard que se refresca frecuentemente.
+ *   - MongoDB  → datos estáticos del curso + lista de inscriptos con progreso individual
+ *   - Redis    → alumnos activos (SET), top 10 ranking (SORTED SET), cola corrección (LIST)
  */
 
 @Service
 @RequiredArgsConstructor
 public class OP3_DashboardInstructorService {
 
-    private final MongoTemplate mongoTemplate;
+    private final MongoService mongoService;
     private final RedisService redisService;
 
-    public DashboardInstructorResponse obtenerDashboard(String cursoId) { // Devuelve toda la información relevante para el dashboard del instructor sobre un curso específico, combinando datos de MongoDB y Redis.
+    public DashboardInstructorResponse obtenerDashboard(String cursoId) {
 
-        // 1. CONSULTA A MONGODB 
-        if (!org.bson.types.ObjectId.isValid(cursoId)) {
+        if (!ObjectId.isValid(cursoId)) {
             throw new IllegalArgumentException("cursoId no es un ObjectId válido: " + cursoId);
         }
-        Query query = new Query(Criteria.where("_id").is(new ObjectId(cursoId)));
-        Document cursoDoc = mongoTemplate.findOne(query, Document.class, "cursos");
+        ObjectId cursoOid = new ObjectId(cursoId);
 
+        // 1. MONGODB: datos del curso
+        Document cursoDoc = mongoService.obtenerCurso(cursoOid);
         if (cursoDoc == null) {
-            throw new IllegalArgumentException("Curso no encontrado en MongoDB: " + cursoId);
+            throw new IllegalStateException("Curso no encontrado en MongoDB: " + cursoId);
         }
 
         String nombreCurso  = cursoDoc.getString("nombre");
         String descripcion  = cursoDoc.getString("descripcion");
-
-        Object instObj = cursoDoc.get("instructor_id");
+        Object instObj      = cursoDoc.get("instructor_id");
         String instructorId = instObj != null ? instObj.toString() : null;
-
-        // Cantidad de inscriptos: puede ser un campo numérico o el tamaño de una lista
         int totalInscriptos = cursoDoc.getInteger("total_inscriptos", 0);
 
-        // 2. CONSULTAS A REDIS 
+        // 2. MONGODB: lista de inscriptos con porcentaje de progreso individual
+        List<Map<String, Object>> inscriptosConProgreso =
+                mongoService.obtenerInscriptosConProgreso(cursoOid);
 
-        // SET: alumnos conectados en este momento
-        Set<String> idsActivos   = redisService.getAlumnosActivos(cursoId);
-        Long cantidadActivos     = redisService.cantidadActivos(cursoId);
+        // 3. REDIS: estado en tiempo real
+        Set<String> idsActivos = redisService.getAlumnosActivos(cursoId);
+        Long cantidadActivos   = redisService.cantidadActivos(cursoId);
 
-        // SORTED SET: top 10 del ranking
-        Set<String> top10Set     = redisService.getTop10(cursoId);
-        List<String> top10       = new ArrayList<>(top10Set != null ? top10Set : List.of());
+        Set<String> top10Set   = redisService.getTop10(cursoId);
+        List<String> top10     = new ArrayList<>(top10Set != null ? top10Set : List.of());
 
-        // LIST: entregas esperando corrección
-        Long pendientes          = redisService.cantidadPendientes(cursoId);
+        Long pendientes        = redisService.cantidadPendientes(cursoId);
 
-        // 3. ARMADO DE LA RESPUESTA 
         return DashboardInstructorResponse.builder()
                 .cursoId(cursoId)
                 .nombreCurso(nombreCurso)
                 .descripcion(descripcion)
                 .instructorId(instructorId)
                 .totalInscriptos(totalInscriptos)
+                .inscriptosConProgreso(inscriptosConProgreso)
                 .alumnosActivosAhora(cantidadActivos)
                 .idsAlumnosActivos(idsActivos)
                 .top10Ranking(top10)

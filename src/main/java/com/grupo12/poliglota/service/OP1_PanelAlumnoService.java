@@ -4,9 +4,6 @@ import com.grupo12.poliglota.dto.PanelAlumnoResponse;
 import lombok.RequiredArgsConstructor;
 import org.bson.Document;
 import org.bson.types.ObjectId;
-import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -20,51 +17,37 @@ import java.util.Map;
  *   - MongoDB  → inscripción, módulos completados, puntajes históricos
  *   - Neo4j    → cursos que se habilitan si aprueba este, pasos a certificación objetivo
  *   - Redis    → estado de sesión activa (HASH) + posición en ranking (SORTED SET)
- *
- * Si no hay sesión activa en Redis, los campos "sesionActiva" y
- * "posicionRanking" pueden venir en null pero el resto se arma igual.
- * Si existe sesión activa, se refresca el TTL (consultar el panel cuenta como actividad).
  */
 
 @Service
 @RequiredArgsConstructor
 public class OP1_PanelAlumnoService {
 
-    private final MongoTemplate mongoTemplate;
+    private final MongoService mongoService;
     private final RedisService redisService;
     private final Neo4jService neo4jService;
 
     public PanelAlumnoResponse obtenerPanel(String alumnoId, String cursoId, String certObjetivo) {
 
-        // 1. MongoDB: inscripción 
         ObjectId alumnoOid = toObjectId(alumnoId, "alumnoId");
-        ObjectId cursoOid  = toObjectId(cursoId, "cursoId");
+        ObjectId cursoOid  = toObjectId(cursoId,  "cursoId");
 
-        Query inscQuery = new Query(new Criteria().andOperator(
-                Criteria.where("alumno_id").is(alumnoOid),
-                Criteria.where("curso_id").is(cursoOid)
-        ));
-        Document inscripcion = mongoTemplate.findOne(inscQuery, Document.class, "inscripciones");
+        // 1. MongoDB: inscripción
+        Document inscripcion = mongoService.obtenerInscripcion(alumnoOid, cursoOid);
         if (inscripcion == null) {
-            throw new IllegalArgumentException(
+            throw new IllegalStateException(
                 "No existe inscripción para alumno " + alumnoId + " en curso " + cursoId);
         }
 
-        String estado = inscripcion.getString("estado");
+        String estado     = inscripcion.getString("estado");
         double porcentaje = inscripcion.get("porcentaje_progreso") instanceof Number n
                 ? n.doubleValue() : 0.0;
 
-        // Nombre del curso
-        Document curso = mongoTemplate.findOne(
-                new Query(Criteria.where("_id").is(cursoOid)), Document.class, "cursos");
+        Document curso = mongoService.obtenerCurso(cursoOid);
         String nombreCurso = curso != null ? curso.getString("nombre") : "(desconocido)";
 
-        // 2. MongoDB: progreso de módulos 
-        Query progresoQuery = new Query(new Criteria().andOperator(
-                Criteria.where("alumno_id").is(alumnoOid),
-                Criteria.where("curso_id").is(cursoOid)
-        ));
-        List<Document> progresos = mongoTemplate.find(progresoQuery, Document.class, "progreso_modulos");
+        // 2. MongoDB: progreso de módulos
+        List<Document> progresos = mongoService.obtenerHistorialModulos(alumnoOid, cursoOid);
 
         List<Map<String, Object>> modulosCompletados = new ArrayList<>();
         List<Double> puntajes = new ArrayList<>();
@@ -72,8 +55,8 @@ public class OP1_PanelAlumnoService {
             if ("completado".equalsIgnoreCase(p.getString("estado"))) {
                 Map<String, Object> m = new HashMap<>();
                 String nombre = p.getString("nombre_modulo");
-                m.put("nombre", nombre != null ? nombre : "(sin nombre)");
-                m.put("orden", p.getInteger("orden_modulo", 0));
+                m.put("nombre",   nombre != null ? nombre : "(sin nombre)");
+                m.put("orden",    p.getInteger("orden_modulo", 0));
                 m.put("intentos", p.getInteger("intentos", 0));
                 modulosCompletados.add(m);
             }
@@ -83,16 +66,14 @@ public class OP1_PanelAlumnoService {
             }
         }
 
-        // 3. Neo4j: grafo de cursos + certificación objetivo
+        // 3. Neo4j
         List<Map<String, Object>> habilitados = neo4jService.cursosHabilitadosSiAprueba(cursoId);
-
         Integer pasos = null;
         if (certObjetivo != null && !certObjetivo.isBlank()) {
-            int p = neo4jService.pasosACertificacion(alumnoId, certObjetivo);
-            pasos = p; // -1 si la ruta no existe (se documenta así)
+            pasos = neo4jService.pasosACertificacion(alumnoId, certObjetivo);
         }
 
-        // 4. Redis: sesión activa + ranking 
+        // 4. Redis
         Map<Object, Object> sesion = null;
         if (redisService.existeSesion(alumnoId, cursoId)) {
             sesion = redisService.obtenerSesion(alumnoId, cursoId);
@@ -100,7 +81,6 @@ public class OP1_PanelAlumnoService {
         }
         Long posRanking = redisService.getPosicionAlumno(cursoId, alumnoId);
 
-        // 5. Ensamblado 
         return PanelAlumnoResponse.builder()
                 .alumnoId(alumnoId)
                 .cursoId(cursoId)

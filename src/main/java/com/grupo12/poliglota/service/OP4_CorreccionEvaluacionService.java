@@ -4,32 +4,19 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.grupo12.poliglota.dto.CorreccionRequest;
 import com.grupo12.poliglota.dto.CorreccionResponse;
+import com.grupo12.poliglota.exception.ColaVaciaException;
 import lombok.RequiredArgsConstructor;
 import org.bson.Document;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 
-import java.time.Instant;
 import java.util.Map;
 
 /*
- * OP-4: Corrección de Evaluación
+ * OP-4: Corrección de Evaluación (2 motores).
  *
- * Motores usados:
- *   - Redis    → fuente del trabajo a corregir (cola LIST) y actualización del ranking (Sorted Set)
- *   - MongoDB  → persistencia histórica del resultado de la corrección
- *
- * Justificación de la combinación:
- *   Redis actúa como cola de trabajo en tiempo real: garantiza orden FIFO y
- *   latencia mínima al desencolar. MongoDB almacena el resultado final de forma
- *   durable y consultable a largo plazo (historial de evaluaciones del alumno).
- *
- * Flujo de la operación:
- *   1. Redis  → desencola el siguiente trabajo de la cola LIST "cola:correccion:{cursoId}"
- *   2. Parsea el JSON del trabajo para extraer el alumnoId
- *   3. MongoDB → guarda el resultado de la corrección en la colección "evaluaciones"
- *   4. Redis  → actualiza el puntaje del alumno en el Sorted Set "ranking:{cursoId}"
- *   5. Retorna el resumen de lo que se hizo
+ *   1. Redis  → desencola el siguiente trabajo de la cola LIST (RPOP)
+ *   2. MongoDB → persiste el resultado en la colección "evaluaciones"
+ *   3. Redis  → actualiza puntaje del alumno en el Sorted Set de ranking
  */
 
 @Service
@@ -37,45 +24,35 @@ import java.util.Map;
 public class OP4_CorreccionEvaluacionService {
 
     private final RedisService redisService;
-    private final MongoTemplate mongoTemplate;
+    private final MongoService mongoService;
     private final ObjectMapper objectMapper;
 
-    public CorreccionResponse corregirSiguiente(CorreccionRequest request) { // Corrige la siguiente evaluación pendiente en la cola para el curso indicado en el request, asignándole el puntaje y comentario del instructor. Retorna un resumen de la corre
+    public CorreccionResponse corregirSiguiente(CorreccionRequest request) {
 
         String cursoId = request.getCursoId();
 
-        // PASO 1: REDIS → Desencolar el siguiente trabajo 
+        // 1. REDIS: desencolar el siguiente trabajo
         String trabajoJson = redisService.desencolarSiguiente(cursoId);
-
         if (trabajoJson == null) {
-            throw new IllegalStateException("La cola de corrección está vacía para el curso: " + cursoId);
+            throw new ColaVaciaException("La cola de corrección está vacía para el curso: " + cursoId);
         }
 
-        // PASO 2: Extraer alumnoId del JSON del trabajo
+        // 2. Extraer alumnoId del JSON del trabajo
         String alumnoId = extraerAlumnoId(trabajoJson);
 
-        // PASO 3: MONGODB → Persistir resultado de la corrección
-        Document evaluacionDoc = new Document()
-                .append("alumno_id",    alumnoId)
-                .append("curso_id",     cursoId)
-                .append("instructor_id", request.getInstructorId())
-                .append("puntaje",      request.getPuntaje())
-                .append("comentario",   request.getComentario())
-                .append("trabajo_json", trabajoJson)
-                .append("fecha_correccion", Instant.now().toString())
-                .append("estado",       "corregido");
-
-        Document saved = mongoTemplate.insert(evaluacionDoc, "evaluaciones");
+        // 3. MONGODB: persistir resultado de la corrección
+        Document saved = mongoService.persistirCorreccion(
+            alumnoId, cursoId, request.getInstructorId(),
+            request.getPuntaje(), request.getComentario(), trabajoJson
+        );
         String mongoId = saved.getObjectId("_id").toHexString();
 
-        // PASO 4: REDIS → Actualizar ranking del alumno 
+        // 4. REDIS: actualizar ranking del alumno
         redisService.actualizarPuntaje(cursoId, alumnoId, request.getPuntaje());
         Long nuevaPosicion = redisService.getPosicionAlumno(cursoId, alumnoId);
 
-        // PASO 5: Consultar cuántas entregas quedan en la cola 
         Long restantes = redisService.cantidadPendientes(cursoId);
 
-        // PASO 6: Armar respuesta 
         return CorreccionResponse.builder()
                 .alumnoId(alumnoId)
                 .cursoId(cursoId)
@@ -89,7 +66,7 @@ public class OP4_CorreccionEvaluacionService {
                 .build();
     }
 
-    private String extraerAlumnoId(String trabajoJson) { // Parsea el JSON del trabajo para extraer el campo "alumno_id". Si no se encuentra o hay error, devuelve "desconocido".
+    private String extraerAlumnoId(String trabajoJson) {
         try {
             Map<String, Object> mapa = objectMapper.readValue(
                 trabajoJson, new TypeReference<Map<String, Object>>() {}
