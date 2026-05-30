@@ -3,7 +3,7 @@
 # Uso:  .\scripts\load_redis.ps1 [-DataFile "..\archivosUsados\redis_datos_prueba_coherentes.txt"]
 
 param(
-    [string]$DataFile = "..\archivosUsados\redis_datos_prueba_coherentes.txt",
+    [string]$DataFile = ".\redis_datos_prueba_coherentes.txt",
     [string]$Container = "redis_poliglota"
 )
 

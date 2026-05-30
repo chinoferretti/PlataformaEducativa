@@ -58,7 +58,9 @@ public class OP5_RecomendacionCursoService {
         // 3. REDIS + ENSAMBLADO
         List<Map<String, Object>> recomendaciones = new ArrayList<>();
         for (Document curso : cursosMongo) {
-            String cursoId      = curso.getObjectId("_id").toHexString();
+            ObjectId oid = curso.getObjectId("_id");
+            String cursoId = oid != null ? oid.toHexString() : null;
+            if (cursoId == null) continue;
             Long alumnosActivos = redisService.cantidadActivos(cursoId);
             Double puntajeMax   = redisService.getPuntajeMaximo(cursoId);
 

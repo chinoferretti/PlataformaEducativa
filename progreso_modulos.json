@@ -1,0 +1,6474 @@
+[
+  {
+    "_id": {
+      "$oid": "aaf2589c193752fe56c051dc"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 1: Traumatología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-13T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f2af48e046b151be912f39e2"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 2: Traumatología I",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-12-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "424dc9bc089672d2e7a1bc3d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 3: Traumatología I",
+    "orden_modulo": 3,
+    "estado": "en curso",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-22T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e7297568fa862a6a59f4c48b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 4: Traumatología I",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "cec370afba4aa1082aa617b7"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 5: Traumatología I",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "19b18f00d475800bd5841a03"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 6: Traumatología I",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "26a9c3c23f4d4c640aa586bb"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 7: Traumatología I",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "c15bad3b75f8370fb7a09c26"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 8: Traumatología I",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "c3ccf804698588de0f2fddf7"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9640"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 1: Inmunología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-05-14T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "77e5132f99d8ea5a043e35af"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9640"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 2: Inmunología I",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-06-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7d61112c3ac29aed90b434f6"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9640"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 3: Inmunología I",
+    "orden_modulo": 3,
+    "estado": "en curso",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-10T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9257c3f34deac17bac197bef"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9640"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 4: Inmunología I",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "868429a1efdd150224ee55c0"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9640"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 5: Inmunología I",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "5ea65ea7982e83e701772e1e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9640"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 6: Inmunología I",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "3fe6d4f9dcc9faae06f6a2a9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9640"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 7: Inmunología I",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "d37b0cb2bbc79d15b0a1311d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9640"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 8: Inmunología I",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "757465e4f114f1850933742e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9639"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Fisiología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-21T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71021d07d212ac4b0e7f9f24"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9639"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Fisiología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-02T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c9985c491eb5650cd534c2ff"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9639"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Fisiología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-15T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "47cd1390683e76df4351a58b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9639"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Fisiología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a6c4556ba9f4e19780d276ce"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9639"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Fisiología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ddc72a2a05170c2704cb7d83"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9639"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Fisiología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-15T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1caf43f37f06217153d3f692"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9639"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Fisiología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 80,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-10T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "78128976a87fd51db92959f4"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9639"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Fisiología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 81,
+    "fecha_ultima_actividad": {
+      "$date": "2023-03-28T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c21e13ca0617ba1b60b280dc"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb966e"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 1: Bases de Farmacología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-06-27T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f2fa2b137e027c5ff0e570b5"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb966e"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 2: Bases de Farmacología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-05-10T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f999f271a017c96464fe22ea"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb966e"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 3: Bases de Farmacología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f7e0f3a018f46d53ff0c5e58"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb966e"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 4: Bases de Farmacología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-06-16T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e87a9c5b0500e363474da48e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb966e"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 5: Bases de Farmacología",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "fd31da4c9950335f081d8cf5"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb966e"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 6: Bases de Farmacología",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "d467a3fa2b9e19ca8b629e7d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb966e"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 7: Bases de Farmacología",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "2c782f3580ac4b9325511033"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb966e"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 8: Bases de Farmacología",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "11e5519ead7113b14962ef54"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Fisiología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "adcebef15560b59a9feb3dd3"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Fisiología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-01-11T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f6d9a6e683e8ba06cb353f60"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Fisiología",
+    "orden_modulo": 3,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "d4100f936925d3b86e13569a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Fisiología",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "04df5462f4d3c48afd5dc078"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Fisiología",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "c2222f5aa1c8049b56ced881"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Fisiología",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "8bc8f1ad41c278096c6a9728"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Fisiología",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "17e1816c9e6bbf7490a5ac8a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Fisiología",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "dd59f9e78655795aa707127e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 1: Teoría de Psiquiatría",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-01-08T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fbf4177579a7c12965b8b0c3"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 2: Teoría de Psiquiatría",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c3f4300bbf8bb91004bd4101"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 3: Teoría de Psiquiatría",
+    "orden_modulo": 3,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "85b8b04e7bb6e8cfc052c698"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 4: Teoría de Psiquiatría",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "cbaa212c55349bd01b4eae86"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 5: Teoría de Psiquiatría",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "ae080aa58f2a696abc4dbef9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 6: Teoría de Psiquiatría",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "6d135de55d28a9802bebb4fb"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 7: Teoría de Psiquiatría",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "f6a6430b7ea2a35add6f3d19"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 8: Teoría de Psiquiatría",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "06c6ef45d56b8a7fe1218475"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 1: Histología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-05-26T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "43e28aecf44d2aaa24f80836"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 2: Histología I",
+    "orden_modulo": 2,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "5a04ea50fa9ae4fafc2730ef"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 3: Histología I",
+    "orden_modulo": 3,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "7846da3578915c0466d6351e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 4: Histología I",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "008f32feff20172be10b009c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 5: Histología I",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "cb590257c3fc5d9afa0837f0"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 6: Histología I",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "a1862bcd63bf166e3b6e4162"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 7: Histología I",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "c569d262bc46593b3c28e1ed"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 8: Histología I",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "5b9cf169f5bca43d7258e56e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 1: Traumatología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-12-08T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "206a48a5d662bd199bf48b60"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 2: Traumatología I",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-19T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b99457636b02ff7112ef811d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 3: Traumatología I",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-09-02T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8df310b38e6986709bb30e61"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 4: Traumatología I",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "a4d89e885be935310d046510"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 5: Traumatología I",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "e42ce4a8ef90ce92a36f520d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 6: Traumatología I",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "6c96832fab76375d81469906"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 7: Traumatología I",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "53a5b5b0f2dd7b9af96acfda"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 8: Traumatología I",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "5a151e8efec1eae47db35b90"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 1: Inmunología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-09-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b0c165f235a5b8f9e6f3d16a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 2: Inmunología I",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-05-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0c0a05fdc5b5af8f295b457e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 3: Inmunología I",
+    "orden_modulo": 3,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "b1a9aeada6aee3385ceccffa"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 4: Inmunología I",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "1785615df29c2799fe9da0c4"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 5: Inmunología I",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "160665228d90741e3943103b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 6: Inmunología I",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "df0b9d890b0ff2a4d13a5d3c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 7: Inmunología I",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "5e33778338ed4f3a44da6ad8"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 8: Inmunología I",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "de476573102191085da9d98c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9660"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 1: Principios de Cirugía",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-02-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "09650db444031d319ecb2cda"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9660"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 2: Principios de Cirugía",
+    "orden_modulo": 2,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "250347fde40b08b3766593fa"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9660"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 3: Principios de Cirugía",
+    "orden_modulo": 3,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "f841f85ef7e51b376da1648e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9660"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 4: Principios de Cirugía",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "3f491ac3e7f1cbb51fa75df0"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9660"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 5: Principios de Cirugía",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "951ff187139e5154877780b2"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9660"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 6: Principios de Cirugía",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "06a6faed7d1848b8976f5501"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9660"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 7: Principios de Cirugía",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "ef7f7ecebc1f88b934eacf16"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9660"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 8: Principios de Cirugía",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "1e7924ed056a5a9d2d94928f"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9675"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Pediatría",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-01-06T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2e11af266bfd892dd52577e2"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9675"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Pediatría",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-17T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "460c0cc70e699130b49b644d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9675"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Pediatría",
+    "orden_modulo": 3,
+    "estado": "en curso",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-02-11T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b8183cc35a9d5dd1c1d755b5"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9675"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Pediatría",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "e626ee2d09d28e9f902752cd"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9675"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Pediatría",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "498c0f5e274e0357d2f04f06"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9675"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Pediatría",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "0924a8e7896c2947154ee0f1"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9675"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Pediatría",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "ae2fb4759884bf848bee9072"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9675"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Pediatría",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "9bb769624cb886c8553db92a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb964f"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 1: Introducción a Fisiología Elemental",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-03-20T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "362549fab3d7c2aba1edd629"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb964f"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 2: Introducción a Fisiología Elemental",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-04T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e7eaff670fa43d2538383a6d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb964f"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 3: Introducción a Fisiología Elemental",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-05-13T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "788c4f3ad78e980d6c57377d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb964f"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 4: Introducción a Fisiología Elemental",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-08-13T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2de2cb0b823837e8fc083dcc"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb964f"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 5: Introducción a Fisiología Elemental",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-03-26T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "61613404495da57785d2b069"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb964f"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 6: Introducción a Fisiología Elemental",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-10T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "de658bcb14aa8870d54edcb6"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb964f"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 7: Introducción a Fisiología Elemental",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 60,
+    "fecha_ultima_actividad": {
+      "$date": "2024-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9a5c2b39ba90694d77c905d2"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb964f"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 8: Introducción a Fisiología Elemental",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "a7595544d32b013d11453b95"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Fisiología",
+    "orden_modulo": 1,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "19490a3f352ef3143c1fadf4"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Fisiología",
+    "orden_modulo": 2,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "d9eb8a4d65109707449db477"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Fisiología",
+    "orden_modulo": 3,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "6b3ddf039b5c2316fde5b00c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Fisiología",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "b92f6ca724fa4a06959d1e8d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Fisiología",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "f8a8679e237754f57efde777"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Fisiología",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "fca13e7cc6a11883835ef4ef"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Fisiología",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "341850cf5c5adf8e101b440a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Fisiología",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "06b3ebc6a7e8d7d1d2d2c38a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 1: Teoría de Psiquiatría",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-06-14T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a71031c807b8751facc3378"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 2: Teoría de Psiquiatría",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-09T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5d3a0daf95703a83ff820bcf"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 3: Teoría de Psiquiatría",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-10-18T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "87ad2484f77b419689cdf021"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 4: Teoría de Psiquiatría",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-23T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7327c903ca5fc9a9b5b1d420"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 5: Teoría de Psiquiatría",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "61169e8dd324a3d2d2179bd0"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 6: Teoría de Psiquiatría",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "394bfe8dc8be1fadc8cdbef4"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 7: Teoría de Psiquiatría",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "6aced098975ca1f5bf64c624"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 8: Teoría de Psiquiatría",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "b64de38a080844f5f13d995c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9691"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Pediatría",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "39ef1b4e08aac2fff3e9e448"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9691"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Pediatría",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-27T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3ea96216854d3409038c8528"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9691"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Pediatría",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-03-04T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b1e2fbf2c4c8f3704a92bdbc"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9691"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Pediatría",
+    "orden_modulo": 4,
+    "estado": "en curso",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a211fdd833ccab0193665420"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9691"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Pediatría",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "4a929ca365e42715229a20a4"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9691"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Pediatría",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "0ea2a963bcd44d8048b1944b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9691"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Pediatría",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "262db72c82a28b2bd9528924"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9691"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Pediatría",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "420e2039f2dfe7090f1a8070"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb963c"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Fisiología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-02-16T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0d968eed7e4ff109572205e7"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb963c"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Fisiología",
+    "orden_modulo": 2,
+    "estado": "en curso",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-04-23T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1a0cb93ec66d1233135a3774"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb963c"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Fisiología",
+    "orden_modulo": 3,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "7f4f8fba55ac5afebbd97fe4"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb963c"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Fisiología",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "8c10f186aaba38650a957f0f"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb963c"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Fisiología",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "688f971a929f721ebe9baca8"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb963c"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Fisiología",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "1cf4bf94d9861cabd1d75469"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb963c"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Fisiología",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "d62e3517ac7a9216af3445f7"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb963c"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Fisiología",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "80a7755e0b4faa13ba4b9fec"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 1: Traumatología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-18T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "52296734b7f07acfedb5c88a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 2: Traumatología I",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-11-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6fb25f85f3598741ba1f4b56"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 3: Traumatología I",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-10-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "802bd89542a280f08f4b12e9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 4: Traumatología I",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-12-17T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "935cbe2ba4610e792ef80d39"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 5: Traumatología I",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-05-08T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9def7c8da3882ad9463f0a66"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 6: Traumatología I",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-20T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ddb0a9845714c2b35558b62e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 7: Traumatología I",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 68,
+    "fecha_ultima_actividad": {
+      "$date": "2024-09-17T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bd892762d0766842bd02af58"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "6b641b3bab20dd488546a1a9"
+    },
+    "nombre_modulo": "Unidad 8: Traumatología I",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 65,
+    "fecha_ultima_actividad": {
+      "$date": "2024-11-08T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "162c2843b732424ee8e1f85b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 1: Histología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-17T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9dd9dcd8939632bb827475af"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 2: Histología I",
+    "orden_modulo": 2,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "38f2e77167b233d5048384de"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 3: Histología I",
+    "orden_modulo": 3,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "78e617cbe199d91e57ef6a0a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 4: Histología I",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "29c0ce14fa75cfdb461959aa"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 5: Histología I",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "40328a8703f4a0bb609180fe"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 6: Histología I",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "b7675a5fe14e7600c942ed36"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 7: Histología I",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "093c23d4cb76fdeac4d5d110"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c75b693192bb2bfd633d6624"
+    },
+    "nombre_modulo": "Unidad 8: Histología I",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "2b8c6c7f2d8f8af764d16937"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Pediatría",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-06-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8fc2d93a9c9d6f7171b9963f"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Pediatría",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-03-22T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ec606a8b8dcbce99c517705f"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Pediatría",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-11-10T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8c93c3c8bf37431299b4a647"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Pediatría",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "3f9d9c2d9a3cd8ef6445cdbe"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Pediatría",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "94a23ddf4d2069d713d1f0e9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Pediatría",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "878996c4915ced02a3113eda"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Pediatría",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "ea81ec7adcb9105c3f8a27c0"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Pediatría",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "c76e42a735eb4315d6f440c6"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 1: Inmunología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-12-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0479b5e5164f3f3dc369ddef"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 2: Inmunología I",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-04T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e7339d3d114d05e2f4b8f802"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 3: Inmunología I",
+    "orden_modulo": 3,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "0b4794bef2238624551939ba"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 4: Inmunología I",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "3644d6fe230a9e2721c55c84"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 5: Inmunología I",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "756d0f209dc531dadae50598"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 6: Inmunología I",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "8f81d35e253e5f98187efc4c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 7: Inmunología I",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "a679d52cb54aac46f0327a03"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 8: Inmunología I",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "8750a50e3a4154911afc92f0"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 1: Principios de Cirugía",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-09-21T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "227a1fdbe7fe8c5a81cca92f"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 2: Principios de Cirugía",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-24T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "413466ee366be1e79e3a771c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 3: Principios de Cirugía",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "705cc316eb0e163094767ba1"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 4: Principios de Cirugía",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-10-27T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "54e852a5e58103be0370e6fb"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 5: Principios de Cirugía",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-10-17T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "04af8c4186ff60ebf043a277"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 6: Principios de Cirugía",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-02-28T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4ee5ab252200d4df90163d56"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 7: Principios de Cirugía",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 79,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-22T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "160b5a85881cf57edae01354"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "67dd30d73aa83f8cff5f9af7"
+    },
+    "nombre_modulo": "Unidad 8: Principios de Cirugía",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 68,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-19T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7e0bd8de0d8026704da703ee"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 1: Teoría de Psiquiatría",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-10T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00cb0bcad4e71ce0f67c5295"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 2: Teoría de Psiquiatría",
+    "orden_modulo": 2,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "a09417509fca6aef14198f87"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 3: Teoría de Psiquiatría",
+    "orden_modulo": 3,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "ed4792bfeee77ed326542ff2"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 4: Teoría de Psiquiatría",
+    "orden_modulo": 4,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "c471d0d8d194fb5231ed38ff"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 5: Teoría de Psiquiatría",
+    "orden_modulo": 5,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "a768712863e625ae5c523542"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 6: Teoría de Psiquiatría",
+    "orden_modulo": 6,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "d7f1ce41967e33edbd3e8f40"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 7: Teoría de Psiquiatría",
+    "orden_modulo": 7,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "8f94918c211c99f351cd48d9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 8: Teoría de Psiquiatría",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "137508c3a7ab9bec2a47c396"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Fisiología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-12-15T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0922bdf4d1be760aa5afb7d3"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Fisiología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-16T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "612ff7196969431d1596f49c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Fisiología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-09T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7afc0328767ca8f71151e782"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Fisiología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-01-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c3ece8a5a3b137281c4c50f5"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Fisiología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-05-27T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4a3af30d5f0cae7cac142c17"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Fisiología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-18T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2e96874204a6c95b211c59d8"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Fisiología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 74,
+    "fecha_ultima_actividad": {
+      "$date": "2023-11-03T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6cc57dedacb869d056cc47ac"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Fisiología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 88,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-18T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c100bc33910b98078cc1a615"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 1: Inmunología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-11-07T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9ee3f2adefbd13094b8dd90e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 2: Inmunología I",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-03-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2be110eb773e5abd2c0fd626"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 3: Inmunología I",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-12-06T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "692701638225151b70be60f9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 4: Inmunología I",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-01-08T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2ec4687798af3e6e0298c886"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 5: Inmunología I",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-10-06T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "82b3a7bc13fa07f37b0fc827"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 6: Inmunología I",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-12-03T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4ff6585f1e80408f90e2ad15"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 7: Inmunología I",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 90,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-02T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "16f9ffc56c7ac3d1410fb20c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 8: Inmunología I",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 76,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-23T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a2a1b03e3c168b0c643172db"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 1: Bases de Farmacología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-05-14T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0e0d263be49f6fcc65a8c57f"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 2: Bases de Farmacología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-09T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "631b8b634528222b8c762b38"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 3: Bases de Farmacología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-10-23T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "70690738f6fc1f70a009bbd9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 4: Bases de Farmacología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-05-09T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3492d8218725125786e98645"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 5: Bases de Farmacología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-27T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6c58bf79f49b484cc946e60b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 6: Bases de Farmacología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-03-02T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8e70262b097a613d28f056ee"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 7: Bases de Farmacología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 92,
+    "fecha_ultima_actividad": {
+      "$date": "2024-03-26T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "33897b97bbccd65b97a8c49d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 8: Bases de Farmacología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 72,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-16T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4cfb8f612ab5cd884ba70343"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Fisiología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-10-04T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "20fef6db84b55c4767d0766c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Fisiología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-12-19T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dfb01bfba99b79e3cb07115e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Fisiología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-03-23T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "cb916d088c01f024f9c4ff37"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Fisiología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-16T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "10adcf0f06c5ab44adbd3a7d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Fisiología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-06-04T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "be7fb6322d4a5ebdc4659c61"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Fisiología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-12-16T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b290be7470b3d02e32c8a970"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Fisiología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 67,
+    "fecha_ultima_actividad": {
+      "$date": "2024-08-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "aec9388fa6184c56a96a172a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Fisiología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 78,
+    "fecha_ultima_actividad": {
+      "$date": "2023-11-17T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b6a604628a2be0268c1bdadf"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 1: Inmunología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-04-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5c1e17e2f127902d9216d9c6"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 2: Inmunología I",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-14T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "14d6c1f1370dbaf2b32cec33"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 3: Inmunología I",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-06-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "234f5a21d99b8ae19ff8a3ba"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 4: Inmunología I",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-06-24T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bd4312344c080d23128eb3c2"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 5: Inmunología I",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dc0a425bb9be7fb0c2910603"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 6: Inmunología I",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-06T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6e23fca50ff423ffaa5ca6a4"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 7: Inmunología I",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 85,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-14T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8e8331f96dbfd86f3d94a613"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 8: Inmunología I",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 89,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-18T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e72a9ebec3cf4f164a0eb834"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 1: Bases de Farmacología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-03-20T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4443b552465f2b5ce3b9bd54"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 2: Bases de Farmacología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-13T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a6c49dd8c64593642164c498"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 3: Bases de Farmacología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-06-14T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fe759978b7e7869767466d45"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 4: Bases de Farmacología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-05-03T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "86a7b1f921518a0f8e01f3ae"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 5: Bases de Farmacología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-06T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f40f3a464d10ddd587e97608"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 6: Bases de Farmacología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-15T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b0d6e661052fc276ba1bd107"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 7: Bases de Farmacología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 68,
+    "fecha_ultima_actividad": {
+      "$date": "2023-09-02T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "16a8a66584ee9800f5e984d3"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 8: Bases de Farmacología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 82,
+    "fecha_ultima_actividad": {
+      "$date": "2023-04-14T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "243fcfe148aa15bb82b1638b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Fisiología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-09T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1c8b3b66a62d141e8f4f4484"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Fisiología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fd2d2e243523f03f4fd81fb9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Fisiología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-24T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "83359da26bd94ab1c7ceecb9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Fisiología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-28T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4802cca6c103cd6268098af3"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Fisiología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0ecafab2d913502553670133"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Fisiología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2cc9e6790679d2813d907b2a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Fisiología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 83,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-13T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c486627bd438ff6cd81039cb"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Fisiología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 72,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-02T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "73a71f5bac270de081533831"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 1: Inmunología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-12-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "96eba420d1a2bd4c1ae4a9e4"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 2: Inmunología I",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-09-24T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "eb43db0f49685b7be8115ec2"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 3: Inmunología I",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-28T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d053901268d1d3e540f0058e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 4: Inmunología I",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-03T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bf26072a3baf4bcce5364ebf"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 5: Inmunología I",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-08-19T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "41571fc293a2fdf1ddfc4417"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 6: Inmunología I",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-02-18T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d69a0d0fa78233aa5df8a0dc"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 7: Inmunología I",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 81,
+    "fecha_ultima_actividad": {
+      "$date": "2023-12-26T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f7d967ce3dae0ddea9221c55"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 8: Inmunología I",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 80,
+    "fecha_ultima_actividad": {
+      "$date": "2023-12-04T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bad6dbed6b06bb85a4ad733f"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 1: Bases de Farmacología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-23T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ec891fffbfe09ededd8ff33c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 2: Bases de Farmacología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-16T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4bf9235362e2ee673d28358e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 3: Bases de Farmacología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-27T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "13eaca3b4b515a1128766144"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 4: Bases de Farmacología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-04-09T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ef52c8787f482ca13ae68953"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 5: Bases de Farmacología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-09-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7776112f0bd8b5c18ff6e506"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 6: Bases de Farmacología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-03-26T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a52820c72cab7e85bab04504"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 7: Bases de Farmacología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 91,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-03T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "47081cc388b61f9c60598979"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 8: Bases de Farmacología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 74,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-22T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f48f7a00813061e0ec3c35cf"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Fisiología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-20T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "072edb9e49d60719ee820aa7"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Fisiología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-15T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "542f5ad3bb5397debf9131b3"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Fisiología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-24T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2e4a86a2334e500a909ac8e6"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Fisiología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-17T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c5b4b5619133d7f61fdee154"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Fisiología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-04-19T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "da6965769a40ca23d0699e78"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Fisiología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-12-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "84669cba0690add3a69d2dd9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Fisiología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 77,
+    "fecha_ultima_actividad": {
+      "$date": "2024-11-26T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4f651534c23ea82c891d4847"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Fisiología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 75,
+    "fecha_ultima_actividad": {
+      "$date": "2024-11-20T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "74cd8000db1239dd28e02299"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 1: Inmunología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-03-27T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4d4134b09e9d29beffb9af5e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 2: Inmunología I",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-17T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "eb236c2e31b415277c061611"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 3: Inmunología I",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-09-24T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ae7706ecc79abbad960f7dc1"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 4: Inmunología I",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-09-26T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "cdbea9a1ea53d5346eb10368"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 5: Inmunología I",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-20T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "80c5bbd8755b0f9b93f4adc1"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 6: Inmunología I",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f4cf2dbf9925e457127e354d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 7: Inmunología I",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 74,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-04T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fd58bee29b38edb1b2562e9a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 8: Inmunología I",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 89,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-23T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a49810d14943fc8f0844e88c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 1: Bases de Farmacología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-05-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "423ccb69076f82cc85814d61"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 2: Bases de Farmacología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-18T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "20694c872d58b859051efd57"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 3: Bases de Farmacología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-10-18T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "826cc89b427ed4da7231b6ee"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 4: Bases de Farmacología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-11-26T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e9da60ddf786ab6a2175d23c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 5: Bases de Farmacología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-11T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d86d5618e2abe6ddf40d2abb"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 6: Bases de Farmacología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4110df30d3071ca88b9ae6b2"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 7: Bases de Farmacología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 87,
+    "fecha_ultima_actividad": {
+      "$date": "2024-02-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72cb1e445fec3ba64de796c8"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 8: Bases de Farmacología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 66,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-03T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "893d626bddd2185835020bcb"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Fisiología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3b7c5ece47498d0cf979a683"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Fisiología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "63bc7682affdfe5b473e6aee"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Fisiología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-12-19T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00a42ae6459a5f3912e3670f"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Fisiología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-10-15T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "497766727d2e83571621bf9b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Fisiología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-17T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e69f3d99cb3f45860b7ba77f"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Fisiología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-11T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "114898684e42e7ffc65526c8"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Fisiología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 82,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "380b1550a6f443cd8d20f914"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Fisiología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 78,
+    "fecha_ultima_actividad": {
+      "$date": "2023-06-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dbbddc45c9cd026105848068"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 1: Inmunología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a27b1d0bf45311b12fa9c3b9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 2: Inmunología I",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-19T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9941b4da342fa4bcefebeabb"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 3: Inmunología I",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-11-16T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e0cad6fc547a308dc42cf80a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 4: Inmunología I",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-12-26T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a293de69e665c1a6199ace02"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 5: Inmunología I",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-16T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3de02724c7a4b85a65d832ca"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 6: Inmunología I",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-19T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0ee54970b1d46cf04ab462fc"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 7: Inmunología I",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 82,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-03T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8c7eb9008341acaaec991cd9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 8: Inmunología I",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 74,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9b4bb9ca55ba644bccbbca5d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 1: Bases de Farmacología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-17T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "acb88bee65941a97a373da87"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 2: Bases de Farmacología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-20T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0c93cf00cfff99be6459066b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 3: Bases de Farmacología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-21T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "35c2184bacfa03010d7594cd"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 4: Bases de Farmacología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-20T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "77e19be22bbf6fe474d15568"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 5: Bases de Farmacología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-10T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "973ed844e0ea93bc73dc62e2"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 6: Bases de Farmacología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-21T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688f8c6b526be8f9c0ffa84d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 7: Bases de Farmacología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 70,
+    "fecha_ultima_actividad": {
+      "$date": "2023-05-24T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00b288bef4c7ca2cab9840f9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 8: Bases de Farmacología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 90,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b2666f01d488a6ea85e8e02e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Fisiología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d6468071fa5302633e0d93e8"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Fisiología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-03-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b4e0e25fcbd94bca2a748473"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Fisiología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-11-13T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "05cc8104072590e35d34e9b7"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Fisiología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-05-28T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "50c48a9c36d5f573a3cc290e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Fisiología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8cd6b9ebca587d5288ea91c9"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Fisiología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-06-06T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "16fd612dbc22e0a1e7b7bee5"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Fisiología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 66,
+    "fecha_ultima_actividad": {
+      "$date": "2023-05-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c9bbea8dcb817a3427598703"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Fisiología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 90,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0d75bd8e047ec1aa32f3a115"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 1: Inmunología I",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-05-03T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ebecfb13f59c82d5bd882792"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 2: Inmunología I",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-03-04T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f61e4cc2274d9dd6aa604fbb"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 3: Inmunología I",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-15T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "950458704f2148a542d73eb5"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 4: Inmunología I",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-06-18T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bff3a8c527a64cccced24a96"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 5: Inmunología I",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-02-23T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4fcecb5094e49448042218bc"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 6: Inmunología I",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-05-21T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d7db53ae3ed2610cd5adbef2"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 7: Inmunología I",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 72,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-08T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e991753ee7da36e3b1298799"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "c4cfbb8a096802f6d67c8720"
+    },
+    "nombre_modulo": "Unidad 8: Inmunología I",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 68,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-11T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c6e665fdcba519e4b62c4f29"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 1: Bases de Farmacología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-03-22T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a935db9c31a285b71cf591c6"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 2: Bases de Farmacología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-11-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "32b549f8b452d566a3e585ec"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 3: Bases de Farmacología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-04-07T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a4a566717f5df9712b02380e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 4: Bases de Farmacología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-02-03T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9d235fb4de037eb87347d748"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 5: Bases de Farmacología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-15T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ee9d951d328aa727f7f830ce"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 6: Bases de Farmacología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-13T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f396e658db9100a18315fd02"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 7: Bases de Farmacología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 67,
+    "fecha_ultima_actividad": {
+      "$date": "2024-09-06T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "97383a551bc13a2deab3966f"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "curso_id": {
+      "$oid": "2b8d6f81430b0b04a8778c53"
+    },
+    "nombre_modulo": "Unidad 8: Bases de Farmacología",
+    "orden_modulo": 8,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 73,
+    "fecha_ultima_actividad": {
+      "$date": "2024-08-18T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7df16a5a629cd1c08f5b231b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 1: Introducción a Fisiología Elemental",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-09-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a250cfc8f86ace5814e98d3d"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 2: Introducción a Fisiología Elemental",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-06-21T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2032fbbde7e8440e254cdc86"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 3: Introducción a Fisiología Elemental",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-11-11T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5fc3a57acfb8158d19d70f79"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 4: Introducción a Fisiología Elemental",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-19T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "354c2b92ec02db65b9f32a81"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 5: Introducción a Fisiología Elemental",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-12-17T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ba46dec69229be8b0b7cde17"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 6: Introducción a Fisiología Elemental",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-03-04T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2e2ab93865215a349333210c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 7: Introducción a Fisiología Elemental",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 80,
+    "fecha_ultima_actividad": {
+      "$date": "2024-11-28T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a416e0a2869b0f3475942406"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "d6a82a951b923e0a443cdef3"
+    },
+    "nombre_modulo": "Unidad 8: Introducción a Fisiología Elemental",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "a3e3fdc08bab50dea5cd5ef1"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Pediatría",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-23T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2f627e3247ae2c664b2d00ba"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Pediatría",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-02-22T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69d156369eb82d343eda3fd8"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Pediatría",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-16T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c054aed55cd3e9e36e13fd9c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Pediatría",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-19T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7c9f7312e67f63a7b8fe2b5a"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Pediatría",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-05-15T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b096878fa340c757ce54b784"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Pediatría",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-01-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9df486888eabf3d267deab3c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Pediatría",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 86,
+    "fecha_ultima_actividad": {
+      "$date": "2024-08-27T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bcb13700534b57a0b5d32ebb"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "8f9b34c95653d4bd2293202c"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Pediatría",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "04a231ec061830a3692ad435"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 1: Teoría de Psiquiatría",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-03-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ddcc6ee31f6de208885603b8"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 2: Teoría de Psiquiatría",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-12-11T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5ef87848cbe2087f96b829c8"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 3: Teoría de Psiquiatría",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-03-02T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7a445c4dd2c5d12572fa8bd3"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 4: Teoría de Psiquiatría",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-02-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "32ff78cb7e03da52a464d105"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 5: Teoría de Psiquiatría",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-04-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5c8d553f3f1f3a6f6ad596eb"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 6: Teoría de Psiquiatría",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-05-28T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d2634b8935eca88d01138c8e"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 7: Teoría de Psiquiatría",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 2,
+    "puntaje_obtenido": 78,
+    "fecha_ultima_actividad": {
+      "$date": "2023-08-03T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6d8c3aef27fb19400cdce136"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "01b0366f11e374ee60aa0d30"
+    },
+    "nombre_modulo": "Unidad 8: Teoría de Psiquiatría",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  },
+  {
+    "_id": {
+      "$oid": "0425e4da53d4d621d1cbe676"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 1: Fundamentos de Fisiología",
+    "orden_modulo": 1,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-10-13T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ffbda7818d1522febcd2d2fd"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 2: Fundamentos de Fisiología",
+    "orden_modulo": 2,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-07-12T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "642131847b25f17598cbd305"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 3: Fundamentos de Fisiología",
+    "orden_modulo": 3,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-02-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "151074375450f7753b4d6df3"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 4: Fundamentos de Fisiología",
+    "orden_modulo": 4,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2024-03-08T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e8783ec012e3e72f67763006"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 5: Fundamentos de Fisiología",
+    "orden_modulo": 5,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-01-01T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "caedea70525941243d2afd6c"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 6: Fundamentos de Fisiología",
+    "orden_modulo": 6,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": {
+      "$date": "2023-07-08T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65c7057cb039fb9f2d433ea6"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 7: Fundamentos de Fisiología",
+    "orden_modulo": 7,
+    "estado": "completado",
+    "intentos": 1,
+    "puntaje_obtenido": 65,
+    "fecha_ultima_actividad": {
+      "$date": "2024-12-06T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9bfe12d79573e6634607e1f5"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "curso_id": {
+      "$oid": "e81775f3ca4225f72051e671"
+    },
+    "nombre_modulo": "Unidad 8: Fundamentos de Fisiología",
+    "orden_modulo": 8,
+    "estado": "pendiente",
+    "intentos": 0,
+    "puntaje_obtenido": 0,
+    "fecha_ultima_actividad": null
+  }
+]

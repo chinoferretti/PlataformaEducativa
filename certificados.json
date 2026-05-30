@@ -1,0 +1,618 @@
+[
+  {
+    "_id": {
+      "$oid": "f45bc9f24f25d04ff8cef7cf"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9628"
+    },
+    "certificacion_id": "CERT-MED",
+    "nombre_cert": "Certificado en Ciencias Médicas Fundamentales",
+    "fecha_emision": {
+      "$date": "2024-05-05T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-626A-5C83-FF20",
+    "cursos_aprobados": [
+      {
+        "$oid": "e81775f3ca4225f72051e671"
+      },
+      {
+        "$oid": "c4cfbb8a096802f6d67c8720"
+      },
+      {
+        "$oid": "2b8d6f81430b0b04a8778c53"
+      },
+      {
+        "$oid": "908b3b0a44ac04d231b4af8d"
+      },
+      {
+        "$oid": "0ffc361ace5bcdc1fa2bc630"
+      },
+      {
+        "$oid": "035205d79b6830760b1cadd2"
+      },
+      {
+        "$oid": "79a45bd7e057571d204b2ae8"
+      },
+      {
+        "$oid": "02ce056c069ef09aed58ec80"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "e7e6538cd8d4398c26d82a78"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb966f"
+    },
+    "certificacion_id": "CERT-MED",
+    "nombre_cert": "Certificado en Ciencias Médicas Fundamentales",
+    "fecha_emision": {
+      "$date": "2023-01-21T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-46AF-B698-E2F6",
+    "cursos_aprobados": [
+      {
+        "$oid": "e81775f3ca4225f72051e671"
+      },
+      {
+        "$oid": "c4cfbb8a096802f6d67c8720"
+      },
+      {
+        "$oid": "2b8d6f81430b0b04a8778c53"
+      },
+      {
+        "$oid": "908b3b0a44ac04d231b4af8d"
+      },
+      {
+        "$oid": "0ffc361ace5bcdc1fa2bc630"
+      },
+      {
+        "$oid": "035205d79b6830760b1cadd2"
+      },
+      {
+        "$oid": "79a45bd7e057571d204b2ae8"
+      },
+      {
+        "$oid": "02ce056c069ef09aed58ec80"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "9dfbcf2534967a0d76b01383"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9621"
+    },
+    "certificacion_id": "CERT-DER",
+    "nombre_cert": "Certificado en Derecho y Ordenamiento Jurídico",
+    "fecha_emision": {
+      "$date": "2023-01-13T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-658B-F374-EEC5",
+    "cursos_aprobados": [
+      {
+        "$oid": "f05d5c0e0af0777370772af6"
+      },
+      {
+        "$oid": "0cfea62eb6c3d440fa6a4498"
+      },
+      {
+        "$oid": "0db61feb918427ff44200e61"
+      },
+      {
+        "$oid": "846050dafa0dd77120e7dbb4"
+      },
+      {
+        "$oid": "2dc7a9ddcf2b2a44be8de111"
+      },
+      {
+        "$oid": "303d5409cc6f0bcd1069cf99"
+      },
+      {
+        "$oid": "bb497b8dd81a4093d54d121e"
+      },
+      {
+        "$oid": "8005b7db644f5dbc71c3ba12"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "7a73dba9c050f9ab388ace90"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96af"
+    },
+    "certificacion_id": "CERT-DER",
+    "nombre_cert": "Certificado en Derecho y Ordenamiento Jurídico",
+    "fecha_emision": {
+      "$date": "2024-09-10T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-71E3-1888-C168",
+    "cursos_aprobados": [
+      {
+        "$oid": "f05d5c0e0af0777370772af6"
+      },
+      {
+        "$oid": "0cfea62eb6c3d440fa6a4498"
+      },
+      {
+        "$oid": "0db61feb918427ff44200e61"
+      },
+      {
+        "$oid": "846050dafa0dd77120e7dbb4"
+      },
+      {
+        "$oid": "2dc7a9ddcf2b2a44be8de111"
+      },
+      {
+        "$oid": "303d5409cc6f0bcd1069cf99"
+      },
+      {
+        "$oid": "bb497b8dd81a4093d54d121e"
+      },
+      {
+        "$oid": "8005b7db644f5dbc71c3ba12"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "32f16b8ea33dcccae003ef79"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb969d"
+    },
+    "certificacion_id": "CERT-ECO",
+    "nombre_cert": "Certificado en Economía y Gestión Empresarial",
+    "fecha_emision": {
+      "$date": "2024-08-17T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-A348-B09D-9927",
+    "cursos_aprobados": [
+      {
+        "$oid": "fe4c528e4224d60d2936619a"
+      },
+      {
+        "$oid": "acda3f47a60d53522defabb0"
+      },
+      {
+        "$oid": "6d92da5dc4ba44e676dc9cfd"
+      },
+      {
+        "$oid": "b0489cc905165d5f38dc7d84"
+      },
+      {
+        "$oid": "30bc9836bfa8c80660e71a10"
+      },
+      {
+        "$oid": "c607cd43b9c7c3b1f4995813"
+      },
+      {
+        "$oid": "b99d0b178ca639d3eaf034b6"
+      },
+      {
+        "$oid": "a1f922377f7e4ce7e24cf2af"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "7b31c0ec38a6ed1ef74b8db6"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb963c"
+    },
+    "certificacion_id": "CERT-ECO",
+    "nombre_cert": "Certificado en Economía y Gestión Empresarial",
+    "fecha_emision": {
+      "$date": "2023-01-16T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-4E5B-7B9E-DA35",
+    "cursos_aprobados": [
+      {
+        "$oid": "fe4c528e4224d60d2936619a"
+      },
+      {
+        "$oid": "acda3f47a60d53522defabb0"
+      },
+      {
+        "$oid": "6d92da5dc4ba44e676dc9cfd"
+      },
+      {
+        "$oid": "b0489cc905165d5f38dc7d84"
+      },
+      {
+        "$oid": "30bc9836bfa8c80660e71a10"
+      },
+      {
+        "$oid": "c607cd43b9c7c3b1f4995813"
+      },
+      {
+        "$oid": "b99d0b178ca639d3eaf034b6"
+      },
+      {
+        "$oid": "a1f922377f7e4ce7e24cf2af"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5ec5396252500c0498d35bf3"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb962d"
+    },
+    "certificacion_id": "CERT-HUM",
+    "nombre_cert": "Certificado en Humanidades y Ciencias Sociales",
+    "fecha_emision": {
+      "$date": "2023-02-18T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-E446-8C93-D3FB",
+    "cursos_aprobados": [
+      {
+        "$oid": "238849a5209d0897aed82e1a"
+      },
+      {
+        "$oid": "c5b490776ce1bf0c5ef6c478"
+      },
+      {
+        "$oid": "14b7599f4884f8362f3b0db4"
+      },
+      {
+        "$oid": "8844bee623e05a218df317f7"
+      },
+      {
+        "$oid": "209aa11b0b7146d284b7a941"
+      },
+      {
+        "$oid": "e35dc5a2f83627525c1d40ca"
+      },
+      {
+        "$oid": "2222b4d45a2c110553a8f8d2"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5674e7313553a492f665a0"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9697"
+    },
+    "certificacion_id": "CERT-HUM",
+    "nombre_cert": "Certificado en Humanidades y Ciencias Sociales",
+    "fecha_emision": {
+      "$date": "2024-03-22T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-A8CD-BA42-645D",
+    "cursos_aprobados": [
+      {
+        "$oid": "238849a5209d0897aed82e1a"
+      },
+      {
+        "$oid": "c5b490776ce1bf0c5ef6c478"
+      },
+      {
+        "$oid": "14b7599f4884f8362f3b0db4"
+      },
+      {
+        "$oid": "8844bee623e05a218df317f7"
+      },
+      {
+        "$oid": "209aa11b0b7146d284b7a941"
+      },
+      {
+        "$oid": "e35dc5a2f83627525c1d40ca"
+      },
+      {
+        "$oid": "2222b4d45a2c110553a8f8d2"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "dc5bcffa7ae1f37ba1d62853"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9671"
+    },
+    "certificacion_id": "CERT-ING",
+    "nombre_cert": "Certificado en Ingeniería Aplicada",
+    "fecha_emision": {
+      "$date": "2023-06-26T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-78DF-395C-B687",
+    "cursos_aprobados": [
+      {
+        "$oid": "d3ae6bf99404105b459e66c4"
+      },
+      {
+        "$oid": "9cbc95c656074df65ddbc5de"
+      },
+      {
+        "$oid": "50e8544404a3fea7bb6ebe0c"
+      },
+      {
+        "$oid": "20244a6538351ee94a93b495"
+      },
+      {
+        "$oid": "7ba5b2b7222d1ce715ec0f7d"
+      },
+      {
+        "$oid": "6f91c5db9cd5b8a276976b7b"
+      },
+      {
+        "$oid": "5736717a7a7cad602b04a2c2"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "50b67c0b04a328dd22b6486b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb963f"
+    },
+    "certificacion_id": "CERT-ING",
+    "nombre_cert": "Certificado en Ingeniería Aplicada",
+    "fecha_emision": {
+      "$date": "2023-10-26T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-F569-DA89-22FD",
+    "cursos_aprobados": [
+      {
+        "$oid": "d3ae6bf99404105b459e66c4"
+      },
+      {
+        "$oid": "9cbc95c656074df65ddbc5de"
+      },
+      {
+        "$oid": "50e8544404a3fea7bb6ebe0c"
+      },
+      {
+        "$oid": "20244a6538351ee94a93b495"
+      },
+      {
+        "$oid": "7ba5b2b7222d1ce715ec0f7d"
+      },
+      {
+        "$oid": "6f91c5db9cd5b8a276976b7b"
+      },
+      {
+        "$oid": "5736717a7a7cad602b04a2c2"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "f83c6dd4efd07c3f6244e100"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9689"
+    },
+    "certificacion_id": "CERT-ART",
+    "nombre_cert": "Certificado en Artes Visuales y Expresión Creativa",
+    "fecha_emision": {
+      "$date": "2024-09-20T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-8A1D-A0DF-FF67",
+    "cursos_aprobados": [
+      {
+        "$oid": "dcc68f29383e1bc7cafcb298"
+      },
+      {
+        "$oid": "71c29a9247ee2e24c17f1ff7"
+      },
+      {
+        "$oid": "8b2d138d368f00477b1765e6"
+      },
+      {
+        "$oid": "99132225ee291ee561890f10"
+      },
+      {
+        "$oid": "9db0d48b379f58eb68a895e3"
+      },
+      {
+        "$oid": "dc90497269079de65bda58f5"
+      },
+      {
+        "$oid": "296896ab8193a2b6df01ec04"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "dc12837f710d2bbab744dad0"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9672"
+    },
+    "certificacion_id": "CERT-ART",
+    "nombre_cert": "Certificado en Artes Visuales y Expresión Creativa",
+    "fecha_emision": {
+      "$date": "2023-06-09T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-26ED-80F2-7412",
+    "cursos_aprobados": [
+      {
+        "$oid": "dcc68f29383e1bc7cafcb298"
+      },
+      {
+        "$oid": "71c29a9247ee2e24c17f1ff7"
+      },
+      {
+        "$oid": "8b2d138d368f00477b1765e6"
+      },
+      {
+        "$oid": "99132225ee291ee561890f10"
+      },
+      {
+        "$oid": "9db0d48b379f58eb68a895e3"
+      },
+      {
+        "$oid": "dc90497269079de65bda58f5"
+      },
+      {
+        "$oid": "296896ab8193a2b6df01ec04"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "ace31bccc891ead4a5edf18b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb9638"
+    },
+    "certificacion_id": "CERT-ARQ",
+    "nombre_cert": "Certificado en Diseño y Planificación Arquitectónica",
+    "fecha_emision": {
+      "$date": "2024-02-11T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-2A6D-973B-1A1E",
+    "cursos_aprobados": [
+      {
+        "$oid": "4480f783451814921e9f33ac"
+      },
+      {
+        "$oid": "aaea599e90974e9f983efb22"
+      },
+      {
+        "$oid": "7f6cd6c847779febe2a95b3b"
+      },
+      {
+        "$oid": "16ad44ef50fa9aaa689296f7"
+      },
+      {
+        "$oid": "c824d3881a6e052e4aee2279"
+      },
+      {
+        "$oid": "13148b40aa1203b2d80ea2a1"
+      },
+      {
+        "$oid": "fb49ba430fb163fc41ec7be0"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "d7a9ac5d5192aeb5742f11fd"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb96a2"
+    },
+    "certificacion_id": "CERT-ARQ",
+    "nombre_cert": "Certificado en Diseño y Planificación Arquitectónica",
+    "fecha_emision": {
+      "$date": "2023-05-13T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-B37B-5BCE-6D54",
+    "cursos_aprobados": [
+      {
+        "$oid": "4480f783451814921e9f33ac"
+      },
+      {
+        "$oid": "aaea599e90974e9f983efb22"
+      },
+      {
+        "$oid": "7f6cd6c847779febe2a95b3b"
+      },
+      {
+        "$oid": "16ad44ef50fa9aaa689296f7"
+      },
+      {
+        "$oid": "c824d3881a6e052e4aee2279"
+      },
+      {
+        "$oid": "13148b40aa1203b2d80ea2a1"
+      },
+      {
+        "$oid": "fb49ba430fb163fc41ec7be0"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "7fb96b5df11aeade86f9918b"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb964c"
+    },
+    "certificacion_id": "CERT-CEX",
+    "nombre_cert": "Certificado en Ciencias Exactas y Naturales",
+    "fecha_emision": {
+      "$date": "2024-10-06T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-2CB0-274C-E87B",
+    "cursos_aprobados": [
+      {
+        "$oid": "e4bbb57335ca34b7ddfe594d"
+      },
+      {
+        "$oid": "a3ae1a7b4d8f81442b2f967d"
+      },
+      {
+        "$oid": "c386d850924f198de0edbd77"
+      },
+      {
+        "$oid": "e89059f0275d0e550ff77902"
+      },
+      {
+        "$oid": "72588080ebabc6ceafbc38ee"
+      },
+      {
+        "$oid": "ec51a7638a64d32578217059"
+      },
+      {
+        "$oid": "42d71153cacdc6f8a2b1adfb"
+      },
+      {
+        "$oid": "5c27ff15dc25940a73d260eb"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "d92531ec083aa942646944b6"
+    },
+    "alumno_id": {
+      "$oid": "69da83d24fd7e59767eb966b"
+    },
+    "certificacion_id": "CERT-CEX",
+    "nombre_cert": "Certificado en Ciencias Exactas y Naturales",
+    "fecha_emision": {
+      "$date": "2024-10-21T00:00:00.000Z"
+    },
+    "codigo_validacion": "CERT-7FD9-917C-DF0C",
+    "cursos_aprobados": [
+      {
+        "$oid": "e4bbb57335ca34b7ddfe594d"
+      },
+      {
+        "$oid": "a3ae1a7b4d8f81442b2f967d"
+      },
+      {
+        "$oid": "c386d850924f198de0edbd77"
+      },
+      {
+        "$oid": "e89059f0275d0e550ff77902"
+      },
+      {
+        "$oid": "72588080ebabc6ceafbc38ee"
+      },
+      {
+        "$oid": "ec51a7638a64d32578217059"
+      },
+      {
+        "$oid": "42d71153cacdc6f8a2b1adfb"
+      },
+      {
+        "$oid": "5c27ff15dc25940a73d260eb"
+      }
+    ]
+  }
+]

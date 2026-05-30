@@ -85,7 +85,7 @@ public class MongoService {
         return mongoTemplate.find(new Query(criteria), Document.class, "cursos");
     }
 
-    // Progreso de módulos 
+    // Progreso de módulos
     public List<Document> obtenerHistorialModulos(ObjectId alumnoOid, ObjectId cursoOid) {
         return mongoTemplate.find(
             new Query(new Criteria().andOperator(
@@ -137,8 +137,8 @@ public class MongoService {
                                         String instructorId, double puntaje,
                                         String comentario, String trabajoJson) {
         Document doc = new Document()
-            .append("alumno_id",        alumnoId)
-            .append("curso_id",         cursoId)
+            .append("alumno_id",        new ObjectId(alumnoId))
+            .append("curso_id",         new ObjectId(cursoId))
             .append("instructor_id",    instructorId)
             .append("puntaje",          puntaje)
             .append("comentario",       comentario)

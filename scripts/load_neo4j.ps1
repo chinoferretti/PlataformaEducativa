@@ -3,7 +3,7 @@
 # Uso:  .\scripts\load_neo4j.ps1 [-DataDir "..\archivosUsados"]
 
 param(
-    [string]$DataDir = "..\archivosUsados",
+    [string]$DataDir = ".",
     [string]$Container = "neo4j_poliglota",
     [string]$User = "neo4j",
     [string]$Password = "password123"

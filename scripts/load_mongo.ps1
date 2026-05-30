@@ -3,7 +3,7 @@
 # Uso:  .\scripts\load_mongo.ps1 [-DataDir "..\archivosUsados"]
 
 param(
-    [string]$DataDir = "..\archivosUsados",
+    [string]$DataDir = ".",
     [string]$Container = "mongo_poliglota",
     [string]$Database = "plataforma_educativa"
 )

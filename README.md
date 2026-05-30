@@ -2,166 +2,216 @@
 
 Aplicación poliglota Spring Boot que integra **MongoDB + Neo4j + Redis** para el dominio de una plataforma educativa online.
 
-> **Estado actual de la entrega:** OP-1, OP-2, OP-3 y OP-4 implementadas. OP-5 (Recomendación de próximo curso) pendiente.
+---
+
+## Requisitos previos
+
+| Herramienta | Versión mínima |
+|---|---|
+| Java | 21 |
+| Maven | incluido (usar `.\mvnw`) |
+| Docker Desktop | cualquier versión reciente |
+| PowerShell | 5.1+ (incluido en Windows 10/11) |
+
+> **Importante:** si tenés MongoDB instalado localmente, el servicio local compite con el contenedor Docker en el puerto `27017`. Antes de continuar, detené el servicio local desde `services.msc` o con `net stop MongoDB`. De lo contrario la aplicación y Compass se conectan al MongoDB local y no ven los datos importados.
 
 ---
 
-## Requisitos
+## Paso 1 — Levantar los contenedores
 
-- **Java 21**
-- **Maven** (o usar el wrapper `./mvnw`)
-- **Docker** + Docker Compose
-- Para los scripts de carga: **PowerShell** (los scripts viven en `scripts/*.ps1`)
+Desde la raíz del proyecto:
 
----
-
-## 1) Levantar los motores
-
-```powershell
 docker compose up -d
-```
 
-Esto deja corriendo:
+Esto deja corriendo tres contenedores:
 
-| Servicio | Container          | Puerto host |
-| -------- | ------------------ | ----------- |
-| MongoDB  | `mongo_poliglota`  | `27017`     |
-| Neo4j    | `neo4j_poliglota`  | `7474` (HTTP) / `7687` (Bolt) |
-| Redis    | `redis_poliglota`  | `6379`      |
+| Motor | Contenedor | Puerto |
+|---|---|---|
+| MongoDB | `mongo_poliglota` | `27017` |
+| Neo4j | `neo4j_poliglota` | `7474` (UI) / `7687` (Bolt) |
+| Redis | `redis_poliglota` | `6379` |
 
-Credenciales Neo4j por defecto: `neo4j / password123`.
+Neo4j UI: `http://localhost:7474` — credenciales: `neo4j / password123`
 
-## 2) Cargar los datos del dominio
+---
 
-Los datasets viven en `../archivosUsados/` (alumnos.json, cursos.json, inscripciones.json, prerrequisitos.csv, rutas_certificacion.csv, redis_datos_prueba_coherentes.txt, etc.).
+## Paso 2 — Cargar los datos
 
-Ejecutar **en este orden** desde la raíz del proyecto:
+Los archivos de datos (JSON, CSV, TXT) están en la **raíz del proyecto**. Ejecutá los tres scripts en este orden desde la raíz:
 
-```powershell
-# Mongo (idempotente: usa --drop)
+# 1. MongoDB — 6 colecciones (usa --drop, es idempotente)
 .\scripts\load_mongo.ps1
 
-# Neo4j (idempotente: usa MERGE)
+# 2. Neo4j — nodos Curso y RutaCertificacion con relaciones REQUIERE e INCLUYE
 .\scripts\load_neo4j.ps1
 
-# Redis (datos de prueba coherentes con Mongo)
+# 3. Redis — sesiones, rankings, colas y alumnos activos de prueba
 .\scripts\load_redis.ps1
-```
 
-Cada script copia los archivos al contenedor correspondiente y ejecuta `mongoimport` / `cypher-shell` / `redis-cli` adentro.
+Al terminar deberías tener:
 
-> **Limitación conocida:** el SET `activos:{cursoId}` no se auto-limpia si la sesión expira por TTL — solo se limpia en OP-2 (cierre explícito). Si se quiere reciclar el entorno, correr `docker compose down -v` y volver a cargar.
+| Colección MongoDB | Documentos |
+|---|---|
+| `cursos` | 400 |
+| `inscripciones` | 1099 |
+| `alumnos` | 150 |
+| `progreso_modulos` | 352 |
+| `instructores` | 10 |
+| `certificados` | 16 |
 
-## 3) Correr la aplicación
-
-```powershell
-./mvnw spring-boot:run
-```
-
-La app expone:
-
-- **Swagger UI:** http://localhost:8080/swagger-ui.html
-- **API docs JSON:** http://localhost:8080/api-docs
-- **Endpoints crudos de Redis:** `/api/redis/...`
-- **Operaciones poliglotas:** `/api/operaciones/op{1..4}/...`
-
-## 4) Variables de entorno
-
-Todas las conexiones son configurables por env vars (ver `src/main/resources/application.properties`). Defaults entre paréntesis:
-
-| Variable          | Default                                          |
-| ----------------- | ------------------------------------------------ |
-| `MONGO_URI`       | `mongodb://localhost:27017/plataforma_educativa` |
-| `REDIS_HOST`      | `localhost`                                      |
-| `REDIS_PORT`      | `6379`                                           |
-| `REDIS_PASSWORD`  | *(vacío)*                                        |
-| `NEO4J_URI`       | `bolt://localhost:7687`                          |
-| `NEO4J_USER`      | `neo4j`                                          |
-| `NEO4J_PASSWORD`  | `password123`                                    |
-| `SERVER_PORT`     | `8080`                                           |
+Podés verificarlo en **MongoDB Compass** conectándote a `mongodb://localhost:27017` y entrando a la base `plataforma_educativa`.
 
 ---
 
-## Operaciones poliglotas
+## Paso 3 — Ejecutar la aplicación
 
-### OP-1 · Panel de alumno en cursado activo · 3 motores
+.\mvnw spring-boot:run
+
+Esperá hasta ver el banner de Spring Boot con el puerto `8080`. La aplicación expone:
+
+| Recurso | URL |
+|---|---|
+| **Swagger UI** | http://localhost:8080/swagger-ui.html |
+| API docs (JSON) | http://localhost:8080/api-docs |
+| Operaciones poliglotas | `/api/operaciones/op{1..5}/...` |
+| Endpoints Redis (CRUD) | `/api/redis/...` |
+
+---
+
+## Paso 4 — Probar las operaciones en Swagger
+
+Abrí `http://localhost:8080/swagger-ui.html`. A continuación se listan los IDs reales del dataset para probar cada operación.
+
+### IDs de prueba
+
+| Entidad | ID |
+|---|---|
+| Alumno (Daniela Martínez) | `69da83d24fd7e59767eb969b` |
+| Curso (Introducción a Pintura Elemental) | `a998e2dff83012bf1e06c1e7` |
+| Instructor del curso | `69da7b979910d1443467655f` |
+
+---
+
+### OP-1 · Panel de alumno en cursado activo
 
 `GET /api/operaciones/op1/panel-alumno`
 
-Params:
-- `alumnoId` — ObjectId hex del alumno
-- `cursoId`  — ObjectId hex del curso
-- `certObjetivo` *(opcional)* — id de la ruta de certificación (ej: `CERT-MED`)
+Combina **MongoDB + Neo4j + Redis**.
 
-Combina:
-- **MongoDB** → inscripción, módulos completados, puntajes históricos
-- **Neo4j**   → cursos que se habilitan si aprueba este + pasos a la certificación
-- **Redis**   → estado de la sesión activa (HASH) + posición en el ranking
+| Parámetro | Valor |
+|---|---|
+| `alumnoId` | `69da83d24fd7e59767eb969b` |
+| `cursoId` | `a998e2dff83012bf1e06c1e7` |
+| `certObjetivo` | *(dejar vacío)* |
 
-Cada llamada **refresca el TTL del HASH a 2h** (mirar el panel cuenta como actividad).
+Devuelve: inscripción, módulos completados, puntajes históricos (MongoDB), cursos desbloqueados y pasos a certificación (Neo4j), sesión activa y posición en ranking (Redis).
 
-```bash
-curl "http://localhost:8080/api/operaciones/op1/panel-alumno?alumnoId=69da83d24fd7e59767eb9640&cursoId=c4cfbb8a096802f6d67c8720&certObjetivo=CERT-MED"
-```
+---
 
-### OP-2 · Cierre de sesión y persistencia de progreso · 3 motores
+### OP-2 · Cierre de sesión y persistencia de progreso
 
 `POST /api/operaciones/op2/cerrar-sesion`
 
-Body:
+Combina **Redis + MongoDB + Neo4j**. Requiere una sesión activa en Redis. Si no hay, creá una primero.
+
+**Paso previo** — `POST /api/redis/sesion/iniciar`
+
+| Parámetro | Valor |
+|---|---|
+| `alumnoId` | `69da83d24fd7e59767eb969b` |
+| `cursoId` | `a998e2dff83012bf1e06c1e7` |
+| `moduloId` | `modulo_3` |
+
+**Luego** — `POST /api/operaciones/op2/cerrar-sesion`
+
 ```json
 {
-  "alumnoId": "69da83d24fd7e59767eb9640",
-  "cursoId":  "c4cfbb8a096802f6d67c8720",
+  "alumnoId": "69da83d24fd7e59767eb969b",
+  "cursoId": "a998e2dff83012bf1e06c1e7",
   "estadoModulo": "completado",
-  "puntajeObtenido": 75.0
+  "puntajeObtenido": 90.0
 }
 ```
 
-Flujo:
-1. **Redis** → HGETALL de `sesion:{alumno}:{curso}`
-2. **MongoDB** → upsert idempotente en `progreso_modulos` por `(alumno_id, curso_id, orden_modulo)` + actualiza `inscripciones.porcentaje_progreso`
-3. **Redis** → si fue evaluación con puntaje > 0, ZADD al ranking
-4. **Neo4j** → si el curso quedó 100% completado, MERGE `(Alumno)-[:COMPLETO]->(Curso)`
-5. **Redis** → DEL del HASH + SREM del SET de activos
+Devuelve: progreso guardado en MongoDB, ranking actualizado en Redis, grafo actualizado en Neo4j, sesión eliminada de Redis.
 
-**Coherencia ante fallo parcial:**
-- Si Mongo falla → 500 y el HASH **NO** se borra (reintentable).
-- Si Neo4j falla → 200 con `gradoConsistencia: "parcial"` y aviso en `avisos[]` (reconciliable).
-- Si todo OK → `gradoConsistencia: "total"`.
+Coherencia ante fallos parciales:
+- Si MongoDB falla → `500`, el HASH de Redis **no** se borra (reintentable)
+- Si Neo4j falla → `200` con `gradoConsistencia: "parcial"` (reconciliable)
 
-### OP-3 · Dashboard del instructor · 2 motores (Mongo + Redis)
+---
 
-`GET /api/operaciones/op3/dashboard-instructor?cursoId={...}`
+### OP-3 · Dashboard del instructor
 
-### OP-4 · Corrección de evaluación · 2 motores (Redis + Mongo)
+`GET /api/operaciones/op3/dashboard-instructor`
+
+Combina **MongoDB + Redis**.
+
+| Parámetro | Valor |
+|---|---|
+| `cursoId` | `a998e2dff83012bf1e06c1e7` |
+
+Devuelve: datos del curso, lista de inscriptos con progreso (MongoDB), alumnos activos ahora, top 10 ranking y entregas pendientes (Redis).
+
+---
+
+### OP-4 · Corrección de evaluación
 
 `POST /api/operaciones/op4/corregir-evaluacion`
 
+Combina **Redis + MongoDB**. Requiere al menos un trabajo en la cola de corrección del curso.
+
+**Paso previo** — `POST /api/redis/cola/encolar`
+
+| Parámetro | Valor |
+|---|---|
+| `cursoId` | `a998e2dff83012bf1e06c1e7` |
+| `trabajoJson` | `{"alumno_id":"69da83d24fd7e59767eb969b","respuestas":{"p1":"A","p2":"C"}}` |
+
+**Luego** — `POST /api/operaciones/op4/corregir-evaluacion`
+
 ```json
-{ "cursoId": "...", "puntaje": 8.5, "comentario": "OK", "instructorId": "..." }
+{
+  "cursoId": "a998e2dff83012bf1e06c1e7",
+  "instructorId": "69da7b979910d1443467655f",
+  "puntaje": 85.0,
+  "comentario": "Buen trabajo, revisar pregunta 2"
+}
 ```
 
-### OP-5 · Recomendación de próximo curso · 3 motores
+Devuelve: trabajo desencolado de Redis, corrección persistida en MongoDB (colección `evaluaciones`), ranking actualizado en Redis.
 
-`GET /api/operaciones/op5/recomendar-curso`
+---
 
-Params:
-- `alumnoId` — ObjectId hex del alumno
-- `idioma` *(opcional)* — filtra cursos por idioma (ej: `español`)
-- `modalidad` *(opcional)* — filtra cursos por modalidad (ej: `online`)
+### OP-5 · Recomendación de próximo curso
 
-Combina:
-- **Neo4j**   → determina qué cursos tiene desbloqueados el alumno: todos sus prerrequisitos completados y que él todavía no cursó
-- **MongoDB** → trae los detalles de esos cursos (nombre, descripción, idioma, modalidad, nivel) y aplica los filtros opcionales
-- **Redis**   → enriquece cada resultado con alumnos activos ahora (SET) y puntaje máximo del ranking (SORTED SET)
+`GET /api/operaciones/op5/recomendar-cursos`
 
-Si el alumno nunca completó ningún curso (no existe como nodo en Neo4j), se devuelven los cursos sin prerrequisitos, que están disponibles para todos.
+Combina **Neo4j + MongoDB + Redis**.
 
-```bash
-curl "http://localhost:8080/api/operaciones/op5/recomendar-curso?alumnoId=69da83d24fd7e59767eb9640"
-curl "http://localhost:8080/api/operaciones/op5/recomendar-curso?alumnoId=69da83d24fd7e59767eb9640&idioma=español&modalidad=online"
-```
+| Parámetro | Valor |
+|---|---|
+| `alumnoId` | `69da83d24fd7e59767eb969b` |
+| `idioma` | *(opcional, ej: `es`)* |
+| `modalidad` | *(opcional, ej: `virtual`)* |
+
+Devuelve: cursos desbloqueados según prerrequisitos completados (Neo4j), detalles y filtros aplicados (MongoDB), alumnos activos y puntaje máximo por curso (Redis).
+
+---
+
+## Variables de entorno
+
+Todas las conexiones tienen defaults que apuntan a `localhost`. Se pueden sobreescribir con variables de entorno:
+
+| Variable | Default |
+|---|---|
+| `MONGO_URI` | `mongodb://localhost:27017/plataforma_educativa` |
+| `REDIS_HOST` | `localhost` |
+| `REDIS_PORT` | `6379` |
+| `REDIS_PASSWORD` | *(vacío)* |
+| `NEO4J_URI` | `bolt://localhost:7687` |
+| `NEO4J_USER` | `neo4j` |
+| `NEO4J_PASSWORD` | `password123` |
 
 ---
 
@@ -172,22 +222,27 @@ src/main/java/com/grupo12/poliglota/
 ├── PoliglotaApplication.java
 ├── config/
 │   ├── Neo4jConfig.java
-│   └── RedisConfig.java
+│   ├── RedisConfig.java
+│   └── GlobalExceptionHandler.java
 ├── controller/
-│   ├── OperacionesController.java   ← OP-1, OP-2, OP-3, OP-4
-│   └── RedisController.java         ← CRUD directo Redis (§3.1, §3.2, §3.3)
+│   ├── OperacionesController.java   ← OP-1 a OP-5
+│   └── RedisController.java         ← CRUD directo Redis
 ├── dto/
-│   ├── CierreSesionRequest.java     · CierreSesionResponse.java
-│   ├── CorreccionRequest.java       · CorreccionResponse.java
+│   ├── PanelAlumnoResponse.java
+│   ├── CierreSesionRequest/Response.java
 │   ├── DashboardInstructorResponse.java
-│   └── PanelAlumnoResponse.java
+│   ├── CorreccionRequest/Response.java
+│   ├── RecomendacionResponse.java
+│   └── ErrorResponse.java
 └── service/
-    ├── RedisService.java            ← HASH/SORTED SET/LIST/SET
-    ├── Neo4jService.java            ← grafo de prerrequisitos y rutas
+    ├── MongoService.java
+    ├── RedisService.java
+    ├── Neo4jService.java
     ├── OP1_PanelAlumnoService.java
     ├── OP2_CierreSesionService.java
     ├── OP3_DashboardInstructorService.java
-    └── OP4_CorreccionEvaluacionService.java
+    ├── OP4_CorreccionEvaluacionService.java
+    └── OP5_RecomendacionCursoService.java
 
 scripts/
 ├── load_mongo.ps1
@@ -196,23 +251,26 @@ scripts/
 └── load_redis.ps1
 ```
 
-## Modelo Neo4j
+---
+
+## Modelo de datos Neo4j
 
 ```
 (:Curso {id, nombre})-[:REQUIERE {obligatorio}]->(:Curso)
 (:RutaCertificacion {id, nombre, categoria, nivel, totalCursos})-[:INCLUYE {orden}]->(:Curso)
 (:Alumno {id})-[:COMPLETO {fecha, puntaje}]->(:Curso)
+(:Alumno {id})-[:INSCRIPTO_EN {porcentaje}]->(:Curso)
 ```
 
-Los nodos `Alumno` se crean **on-demand** desde OP-2 al completar un curso (MERGE). Esto evita tener que sincronizar el catálogo completo de alumnos contra Mongo.
+Los nodos `Alumno` se crean on-demand desde OP-2 al completar un curso (`MERGE`).
 
-## Convención de claves Redis
+---
 
-`entidad:identificador:atributo`
+## Claves Redis
 
-| Clave                     | Tipo       | Uso                                       |
-| ------------------------- | ---------- | ----------------------------------------- |
-| `sesion:{alumno}:{curso}` | HASH       | Estado de sesión activa (TTL 2h)          |
-| `ranking:{curso}`         | SORTED SET | Ranking por puntaje                       |
-| `cola:correccion:{curso}` | LIST       | FIFO de trabajos pendientes               |
-| `activos:{curso}`         | SET        | Alumnos presentes en este momento         |
+| Clave | Tipo | Descripción |
+|---|---|---|
+| `sesion:{alumnoId}:{cursoId}` | HASH | Estado de sesión activa (TTL 2 h) |
+| `ranking:{cursoId}` | SORTED SET | Ranking de alumnos por puntaje |
+| `cola:correccion:{cursoId}` | LIST | Cola FIFO de entregas pendientes |
+| `activos:{cursoId}` | SET | Alumnos conectados en este momento |

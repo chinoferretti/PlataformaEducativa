@@ -1,0 +1,308 @@
+================================================================================
+  PLATAFORMA EDUCATIVA ONLINE — TP2 Tema 3
+  Redis: Datos de prueba coherentes con MongoDB
+  IDs extraídos directamente de las colecciones reales
+================================================================================
+
+REFERENCIA DE IDs REALES USADOS EN ESTE ARCHIVO
+--------------------------------------------------------------------------------
+Estos IDs provienen directamente de los JSONs de MongoDB. Usarlos garantiza
+coherencia total entre los tres motores (MongoDB, Neo4j, Redis).
+
+ALUMNOS:
+  69da83d24fd7e59767eb9640  →  Tomás López
+  69da83d24fd7e59767eb964f  →  Isabel Cruz
+  69da83d24fd7e59767eb963c  →  Pablo Ramos
+  69da83d24fd7e59767eb9675  →  Patricia Vega
+  69da83d24fd7e59767eb9679  →  Lorena Medina
+  69da83d24fd7e59767eb9691  →  Natalia Mendoza
+
+CURSOS (con módulos completos cargados en MongoDB):
+  c4cfbb8a096802f6d67c8720  →  Inmunología I (medicina, 8 módulos)
+  d6a82a951b923e0a443cdef3  →  Introducción a Fisiología Elemental (medicina, 8 módulos)
+  e81775f3ca4225f72051e671  →  Fundamentos de Fisiología (medicina, 8 módulos)
+  8f9b34c95653d4bd2293202c  →  Fundamentos de Pediatría (medicina, 8 módulos)
+
+ESTADO REAL EN MONGODB (inscripciones activas):
+  Tomás López     → Inmunología I           (30.4% progreso, cursando Unidad 3)
+  Isabel Cruz     → Fisiología Elemental    (86.2% progreso, cursando Unidad 8)
+  Pablo Ramos     → Fundamentos Fisiología  (16.2% progreso, cursando Unidad 2)
+  Patricia Vega   → Fundamentos Pediatría   (32.6% progreso)
+  Natalia Mendoza → Fundamentos Pediatría   (39.5% progreso)
+  Lorena Medina   → Fisiología Elemental    (85.0% progreso)
+
+
+================================================================================
+  SECCIÓN 1 — GESTIÓN DE SESIÓN (HASH) — Datos reales
+================================================================================
+
+-- -----------------------------------------------------------------------
+-- Iniciar sesiones para los 3 alumnos activos principales
+-- Coherente con: inscripciones.estado = "activa" en MongoDB
+-- -----------------------------------------------------------------------
+
+-- SESIÓN 1: Tomás López cursando Inmunología I
+-- Estado real en MongoDB: completó Unidades 1 y 2, está en Unidad 3 (ejercicio)
+HSET sesion:69da83d24fd7e59767eb9640:c4cfbb8a096802f6d67c8720 alumno_id "69da83d24fd7e59767eb9640" curso_id "c4cfbb8a096802f6d67c8720" modulo_id "ord_3" posicion_segundos "0" respuestas_parciales "{}" tiempo_acumulado "0" ultima_actividad "2026-05-21T10:00:00Z"
+EXPIRE sesion:69da83d24fd7e59767eb9640:c4cfbb8a096802f6d67c8720 7200
+
+-- SESIÓN 2: Isabel Cruz cursando Fisiología Elemental
+-- Estado real en MongoDB: completó Unidades 1-7 (puntaje quiz=60), está en Unidad 8 (examen final)
+HSET sesion:69da83d24fd7e59767eb964f:d6a82a951b923e0a443cdef3 alumno_id "69da83d24fd7e59767eb964f" curso_id "d6a82a951b923e0a443cdef3" modulo_id "ord_8" posicion_segundos "0" respuestas_parciales "{}" tiempo_acumulado "0" ultima_actividad "2026-05-21T10:05:00Z"
+EXPIRE sesion:69da83d24fd7e59767eb964f:d6a82a951b923e0a443cdef3 7200
+
+-- SESIÓN 3: Pablo Ramos cursando Fundamentos de Fisiología
+-- Estado real en MongoDB: completó Unidad 1, está en Unidad 2 (lectura)
+HSET sesion:69da83d24fd7e59767eb963c:e81775f3ca4225f72051e671 alumno_id "69da83d24fd7e59767eb963c" curso_id "e81775f3ca4225f72051e671" modulo_id "ord_2" posicion_segundos "0" respuestas_parciales "{}" tiempo_acumulado "0" ultima_actividad "2026-05-21T10:10:00Z"
+EXPIRE sesion:69da83d24fd7e59767eb963c:e81775f3ca4225f72051e671 7200
+
+-- Tokens de sesión para cada alumno
+SET token:tkn_tomaslopez "69da83d24fd7e59767eb9640"
+EXPIRE token:tkn_tomaslopez 7200
+
+SET token:tkn_isabelcruz "69da83d24fd7e59767eb964f"
+EXPIRE token:tkn_isabelcruz 7200
+
+SET token:tkn_pabloramos "69da83d24fd7e59767eb963c"
+EXPIRE token:tkn_pabloramos 7200
+
+-- Agregar al SET de activos por curso
+SADD activos:c4cfbb8a096802f6d67c8720 "69da83d24fd7e59767eb9640"
+SADD activos:d6a82a951b923e0a443cdef3 "69da83d24fd7e59767eb964f"
+SADD activos:d6a82a951b923e0a443cdef3 "69da83d24fd7e59767eb9679"
+SADD activos:e81775f3ca4225f72051e671 "69da83d24fd7e59767eb963c"
+SADD activos:8f9b34c95653d4bd2293202c "69da83d24fd7e59767eb9675"
+SADD activos:8f9b34c95653d4bd2293202c "69da83d24fd7e59767eb9691"
+
+-- Verificar sesiones creadas
+HGETALL sesion:69da83d24fd7e59767eb9640:c4cfbb8a096802f6d67c8720
+HGETALL sesion:69da83d24fd7e59767eb964f:d6a82a951b923e0a443cdef3
+TTL sesion:69da83d24fd7e59767eb964f:d6a82a951b923e0a443cdef3
+
+
+-- -----------------------------------------------------------------------
+-- Simular checkpoints de video (cada 10 segundos)
+-- Tomás López avanza en el video de Unidad 3 de Inmunología I
+-- -----------------------------------------------------------------------
+
+HSET sesion:69da83d24fd7e59767eb9640:c4cfbb8a096802f6d67c8720 posicion_segundos "120" tiempo_acumulado "120" ultima_actividad "2026-05-21T10:02:00Z"
+HSET sesion:69da83d24fd7e59767eb9640:c4cfbb8a096802f6d67c8720 posicion_segundos "240" tiempo_acumulado "240" ultima_actividad "2026-05-21T10:04:00Z"
+HSET sesion:69da83d24fd7e59767eb9640:c4cfbb8a096802f6d67c8720 posicion_segundos "360" tiempo_acumulado "360" ultima_actividad "2026-05-21T10:06:00Z"
+
+-- Verificar posición actualizada
+HMGET sesion:69da83d24fd7e59767eb9640:c4cfbb8a096802f6d67c8720 posicion_segundos tiempo_acumulado ultima_actividad
+
+
+-- -----------------------------------------------------------------------
+-- Simular respuestas parciales de quiz
+-- Isabel Cruz responde preguntas del examen final (Unidad 8)
+-- -----------------------------------------------------------------------
+
+HSET sesion:69da83d24fd7e59767eb964f:d6a82a951b923e0a443cdef3 respuestas_parciales "{\"p1\":\"b\"}" ultima_actividad "2026-05-21T10:08:00Z"
+HSET sesion:69da83d24fd7e59767eb964f:d6a82a951b923e0a443cdef3 respuestas_parciales "{\"p1\":\"b\",\"p2\":\"a\",\"p3\":\"c\"}" ultima_actividad "2026-05-21T10:09:30Z"
+HSET sesion:69da83d24fd7e59767eb964f:d6a82a951b923e0a443cdef3 respuestas_parciales "{\"p1\":\"b\",\"p2\":\"a\",\"p3\":\"c\",\"p4\":\"a\",\"p5\":\"b\"}" tiempo_acumulado "840" ultima_actividad "2026-05-21T10:14:00Z"
+
+-- Verificar
+HGET sesion:69da83d24fd7e59767eb964f:d6a82a951b923e0a443cdef3 respuestas_parciales
+
+
+-- -----------------------------------------------------------------------
+-- Cerrar sesión de Isabel Cruz (completa el examen final)
+-- Primero leer estado, luego borrar (en prod: persistir en MongoDB antes)
+-- -----------------------------------------------------------------------
+
+-- PASO 1: leer estado completo (esto va a MongoDB → progreso_modulos)
+HGETALL sesion:69da83d24fd7e59767eb964f:d6a82a951b923e0a443cdef3
+
+-- PASO 2: borrar HASH de Redis
+DEL sesion:69da83d24fd7e59767eb964f:d6a82a951b923e0a443cdef3
+
+-- PASO 3: invalidar token
+DEL token:tkn_isabelcruz
+
+-- PASO 4: quitar del SET de activos
+SREM activos:d6a82a951b923e0a443cdef3 "69da83d24fd7e59767eb964f"
+
+-- Verificar
+EXISTS sesion:69da83d24fd7e59767eb964f:d6a82a951b923e0a443cdef3
+SMEMBERS activos:d6a82a951b923e0a443cdef3
+
+
+-- -----------------------------------------------------------------------
+-- Recuperar sesión interrumpida: Pablo Ramos vuelve al sistema
+-- -----------------------------------------------------------------------
+
+-- Caso A: sesión sigue en Redis
+EXISTS sesion:69da83d24fd7e59767eb963c:e81775f3ca4225f72051e671
+-- Si devuelve 1 → restaurar desde Redis
+HGETALL sesion:69da83d24fd7e59767eb963c:e81775f3ca4225f72051e671
+TTL sesion:69da83d24fd7e59767eb963c:e81775f3ac4225f72051e671
+
+-- Caso B: simular sesión expirada (forzar expiración inmediata)
+EXPIRE sesion:69da83d24fd7e59767eb963c:e81775f3ca4225f72051e671 1
+-- Esperar 2 segundos y verificar
+EXISTS sesion:69da83d24fd7e59767eb963c:e81775f3ca4225f72051e671
+-- Resultado 0 → ir a MongoDB (colección progreso_modulos) a restaurar
+
+
+================================================================================
+  SECCIÓN 2 — RANKING POR CURSO (SORTED SET) — Datos reales
+================================================================================
+
+-- -----------------------------------------------------------------------
+-- Cargar ranking de Inmunología I (c4cfbb8a096802f6d67c8720)
+-- Puntajes coherentes con puntaje_obtenido en progreso_modulos
+-- En MongoDB los puntajes de evaluación están en Unidades 7 y 8
+-- -----------------------------------------------------------------------
+
+-- Ranking Inmunología I: 6 alumnos con puntajes acumulados
+ZADD ranking:c4cfbb8a096802f6d67c8720 72.0 "69da83d24fd7e59767eb9640"
+ZADD ranking:c4cfbb8a096802f6d67c8720 85.5 "69da83d24fd7e59767eb9621"
+ZADD ranking:c4cfbb8a096802f6d67c8720 91.0 "69da83d24fd7e59767eb9625"
+ZADD ranking:c4cfbb8a096802f6d67c8720 68.0 "69da83d24fd7e59767eb9628"
+ZADD ranking:c4cfbb8a096802f6d67c8720 95.5 "69da83d24fd7e59767eb9622"
+ZADD ranking:c4cfbb8a096802f6d67c8720 78.0 "69da83d24fd7e59767eb9623"
+
+-- Ranking Fisiología Elemental (d6a82a951b923e0a443cdef3)
+-- Isabel Cruz tiene puntaje 60 en Unidad 7 (quiz) confirmado en MongoDB
+ZADD ranking:d6a82a951b923e0a443cdef3 60.0 "69da83d24fd7e59767eb964f"
+ZADD ranking:d6a82a951b923e0a443cdef3 88.0 "69da83d24fd7e59767eb9679"
+ZADD ranking:d6a82a951b923e0a443cdef3 74.5 "69da83d24fd7e59767eb9624"
+ZADD ranking:d6a82a951b923e0a443cdef3 92.0 "69da83d24fd7e59767eb9626"
+ZADD ranking:d6a82a951b923e0a443cdef3 55.0 "69da83d24fd7e59767eb9627"
+
+-- Ranking Fundamentos de Fisiología (e81775f3ca4225f72051e671)
+ZADD ranking:e81775f3ca4225f72051e671 45.0 "69da83d24fd7e59767eb963c"
+ZADD ranking:e81775f3ca4225f72051e671 80.0 "69da83d24fd7e59767eb9630"
+ZADD ranking:e81775f3ca4225f72051e671 66.0 "69da83d24fd7e59767eb9631"
+
+-- Ranking Fundamentos de Pediatría (8f9b34c95653d4bd2293202c)
+ZADD ranking:8f9b34c95653d4bd2293202c 77.0 "69da83d24fd7e59767eb9675"
+ZADD ranking:8f9b34c95653d4bd2293202c 83.5 "69da83d24fd7e59767eb9691"
+ZADD ranking:8f9b34c95653d4bd2293202c 90.0 "69da83d24fd7e59767eb9632"
+ZADD ranking:8f9b34c95653d4bd2293202c 61.0 "69da83d24fd7e59767eb9633"
+
+
+-- -----------------------------------------------------------------------
+-- Operaciones de ranking requeridas por el enunciado (sección 3.2)
+-- -----------------------------------------------------------------------
+
+-- 3.2a) Actualizar puntaje al aprobar evaluación
+-- Isabel Cruz aprueba el examen final de Fisiología Elemental: suma 78 puntos
+ZINCRBY ranking:d6a82a951b923e0a443cdef3 78.0 "69da83d24fd7e59767eb964f"
+ZSCORE ranking:d6a82a951b923e0a443cdef3 "69da83d24fd7e59767eb964f"
+
+-- 3.2b) Top 10 alumnos de Inmunología I (descendente)
+ZREVRANGE ranking:c4cfbb8a096802f6d67c8720 0 9 WITHSCORES
+
+-- 3.2c) Posición de Tomás López en Inmunología I
+ZREVRANK ranking:c4cfbb8a096802f6d67c8720 "69da83d24fd7e59767eb9640"
+ZSCORE ranking:c4cfbb8a096802f6d67c8720 "69da83d24fd7e59767eb9640"
+
+-- 3.2d) Alumnos con puntaje entre 70 y 90 en Inmunología I
+ZRANGEBYSCORE ranking:c4cfbb8a096802f6d67c8720 70 90 WITHSCORES
+
+-- Alumnos con puntaje >= 90 (aprobados con distinción)
+ZRANGEBYSCORE ranking:c4cfbb8a096802f6d67c8720 90 +inf WITHSCORES
+
+-- Total inscriptos con puntaje registrado en el ranking
+ZCARD ranking:c4cfbb8a096802f6d67c8720
+
+
+================================================================================
+  SECCIÓN 3 — COLA DE CORRECCIÓN (LIST) — Datos reales
+================================================================================
+
+-- -----------------------------------------------------------------------
+-- Encolar entregas de evaluaciones tipo "examen final" y "proyecto"
+-- Coherente con módulos tipo evaluacion en los cursos de MongoDB
+-- Unidad 8 de cada curso es el examen final (requiere corrección manual)
+-- -----------------------------------------------------------------------
+
+-- Cola de corrección de Inmunología I
+LPUSH cola:correccion:c4cfbb8a096802f6d67c8720 "{\"alumno_id\":\"69da83d24fd7e59767eb9621\",\"curso_id\":\"c4cfbb8a096802f6d67c8720\",\"modulo_id\":\"ord_8\",\"nombre_modulo\":\"Unidad 8: Inmunología I\",\"timestamp\":\"2026-05-21T08:10:00Z\",\"url_entrega\":\"https://storage/entregas/9621_inmuno_final.pdf\"}"
+
+LPUSH cola:correccion:c4cfbb8a096802f6d67c8720 "{\"alumno_id\":\"69da83d24fd7e59767eb9625\",\"curso_id\":\"c4cfbb8a096802f6d67c8720\",\"modulo_id\":\"ord_8\",\"nombre_modulo\":\"Unidad 8: Inmunología I\",\"timestamp\":\"2026-05-21T09:45:00Z\",\"url_entrega\":\"https://storage/entregas/9625_inmuno_final.pdf\"}"
+
+LPUSH cola:correccion:c4cfbb8a096802f6d67c8720 "{\"alumno_id\":\"69da83d24fd7e59767eb9640\",\"curso_id\":\"c4cfbb8a096802f6d67c8720\",\"modulo_id\":\"ord_7\",\"nombre_modulo\":\"Unidad 7: Inmunología I\",\"timestamp\":\"2026-05-21T10:30:00Z\",\"url_entrega\":\"https://storage/entregas/9640_inmuno_quiz.pdf\"}"
+
+-- Cola de corrección de Fisiología Elemental
+LPUSH cola:correccion:d6a82a951b923e0a443cdef3 "{\"alumno_id\":\"69da83d24fd7e59767eb964f\",\"curso_id\":\"d6a82a951b923e0a443cdef3\",\"modulo_id\":\"ord_8\",\"nombre_modulo\":\"Unidad 8: Introducción a Fisiología Elemental\",\"timestamp\":\"2026-05-21T10:15:00Z\",\"url_entrega\":\"https://storage/entregas/964f_fisio_final.pdf\"}"
+
+LPUSH cola:correccion:d6a82a951b923e0a443cdef3 "{\"alumno_id\":\"69da83d24fd7e59767eb9679\",\"curso_id\":\"d6a82a951b923e0a443cdef3\",\"modulo_id\":\"ord_8\",\"nombre_modulo\":\"Unidad 8: Introducción a Fisiología Elemental\",\"timestamp\":\"2026-05-21T11:00:00Z\",\"url_entrega\":\"https://storage/entregas/9679_fisio_final.pdf\"}"
+
+-- Ver colas completas
+LRANGE cola:correccion:c4cfbb8a096802f6d67c8720 0 -1
+LRANGE cola:correccion:d6a82a951b923e0a443cdef3 0 -1
+
+-- Ver próximo a corregir sin consumir
+LINDEX cola:correccion:c4cfbb8a096802f6d67c8720 -1
+
+-- 3.3b) Instructor desencola el trabajo más antiguo de Inmunología I
+RPOP cola:correccion:c4cfbb8a096802f6d67c8720
+
+-- 3.3c) Cuántos trabajos pendientes quedan
+LLEN cola:correccion:c4cfbb8a096802f6d67c8720
+LLEN cola:correccion:d6a82a951b923e0a443cdef3
+
+
+================================================================================
+  SECCIÓN 4 — ESTADO GLOBAL Y VERIFICACIÓN FINAL
+================================================================================
+
+-- Ver todas las claves activas
+KEYS *
+
+-- Alumnos activos por curso ahora mismo
+SCARD activos:c4cfbb8a096802f6d67c8720
+SMEMBERS activos:c4cfbb8a096802f6d67c8720
+SCARD activos:d6a82a951b923e0a443cdef3
+SCARD activos:8f9b34c95653d4bd2293202c
+
+-- Ver sesiones activas
+KEYS sesion:*
+
+-- Ver rankings cargados
+ZREVRANGE ranking:c4cfbb8a096802f6d67c8720 0 -1 WITHSCORES
+ZREVRANGE ranking:d6a82a951b923e0a443cdef3 0 -1 WITHSCORES
+
+-- Verificar tokens activos
+KEYS token:*
+GET token:tkn_tomaslopez
+GET token:tkn_pabloramos
+
+-- Tipo de cada estructura (verificación)
+TYPE sesion:69da83d24fd7e59767eb9640:c4cfbb8a096802f6d67c8720
+TYPE ranking:c4cfbb8a096802f6d67c8720
+TYPE cola:correccion:c4cfbb8a096802f6d67c8720
+TYPE token:tkn_tomaslopez
+TYPE activos:c4cfbb8a096802f6d67c8720
+
+
+================================================================================
+  SECCIÓN 5 — LIMPIEZA PARA REPETIR PRUEBAS
+================================================================================
+
+DEL sesion:69da83d24fd7e59767eb9640:c4cfbb8a096802f6d67c8720
+DEL sesion:69da83d24fd7e59767eb964f:d6a82a951b923e0a443cdef3
+DEL sesion:69da83d24fd7e59767eb963c:e81775f3ca4225f72051e671
+DEL token:tkn_tomaslopez
+DEL token:tkn_isabelcruz
+DEL token:tkn_pabloramos
+DEL ranking:c4cfbb8a096802f6d67c8720
+DEL ranking:d6a82a951b923e0a443cdef3
+DEL ranking:e81775f3ca4225f72051e671
+DEL ranking:8f9b34c95653d4bd2293202c
+DEL cola:correccion:c4cfbb8a096802f6d67c8720
+DEL cola:correccion:d6a82a951b923e0a443cdef3
+DEL activos:c4cfbb8a096802f6d67c8720
+DEL activos:d6a82a951b923e0a443cdef3
+DEL activos:e81775f3ca4225f72051e671
+DEL activos:8f9b34c95653d4bd2293202c
+
+-- O limpiar todo en entorno de pruebas
+-- FLUSHALL
+
+================================================================================
+  FIN — Datos de prueba coherentes con MongoDB
+================================================================================

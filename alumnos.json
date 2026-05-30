@@ -1,0 +1,1952 @@
+[
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9620"
+    },
+    "nombre": "Juan García",
+    "email": "juan.garcía_1@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2023-10-17T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9621"
+    },
+    "nombre": "María Rodríguez",
+    "email": "maría.rodríguez_2@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2022-04-25T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9622"
+    },
+    "nombre": "Carlos López",
+    "email": "carlos.lópez_3@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2022-01-26T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9623"
+    },
+    "nombre": "Ana Martínez",
+    "email": "ana.martínez_4@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2024-01-30T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9624"
+    },
+    "nombre": "Luis González",
+    "email": "luis.gonzález_5@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2022-10-09T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9625"
+    },
+    "nombre": "Sofía Pérez",
+    "email": "sofía.pérez_6@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2022-09-08T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9626"
+    },
+    "nombre": "Pedro Sánchez",
+    "email": "pedro.sánchez_7@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2022-08-17T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9627"
+    },
+    "nombre": "Laura Ramírez",
+    "email": "laura.ramírez_8@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2022-05-23T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9628"
+    },
+    "nombre": "Diego Torres",
+    "email": "diego.torres_9@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2024-01-25T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9629"
+    },
+    "nombre": "Valentina Flores",
+    "email": "valentina.flores_10@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2022-04-15T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb962a"
+    },
+    "nombre": "Andrés Rivera",
+    "email": "andrés.rivera_11@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2023-11-24T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb962b"
+    },
+    "nombre": "Camila Díaz",
+    "email": "camila.díaz_12@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2024-01-29T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb962c"
+    },
+    "nombre": "Roberto Morales",
+    "email": "roberto.morales_13@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2024-07-02T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb962d"
+    },
+    "nombre": "Natalia Jiménez",
+    "email": "natalia.jiménez_14@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2023-07-13T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb962e"
+    },
+    "nombre": "Fernando Ruiz",
+    "email": "fernando.ruiz_15@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2022-03-31T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb962f"
+    },
+    "nombre": "Lucía Hernández",
+    "email": "lucía.hernández_16@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2023-08-28T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9630"
+    },
+    "nombre": "Martín Reyes",
+    "email": "martín.reyes_17@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2023-03-09T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9631"
+    },
+    "nombre": "Paula Cruz",
+    "email": "paula.cruz_18@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2022-02-02T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9632"
+    },
+    "nombre": "Javier Ortiz",
+    "email": "javier.ortiz_19@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2022-01-31T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9633"
+    },
+    "nombre": "Claudia Vargas",
+    "email": "claudia.vargas_20@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2022-04-06T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9634"
+    },
+    "nombre": "Miguel Romero",
+    "email": "miguel.romero_21@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2022-08-12T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9635"
+    },
+    "nombre": "Florencia Castillo",
+    "email": "florencia.castillo_22@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2022-08-27T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9636"
+    },
+    "nombre": "Gabriel Gutiérrez",
+    "email": "gabriel.gutiérrez_23@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2023-06-02T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9637"
+    },
+    "nombre": "Daniela Mendoza",
+    "email": "daniela.mendoza_24@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2023-09-09T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9638"
+    },
+    "nombre": "Ricardo Álvarez",
+    "email": "ricardo.álvarez_25@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2022-01-28T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9639"
+    },
+    "nombre": "Alejandra Vega",
+    "email": "alejandra.vega_26@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2023-07-29T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb963a"
+    },
+    "nombre": "Sergio Guerrero",
+    "email": "sergio.guerrero_27@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2022-07-23T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb963b"
+    },
+    "nombre": "Mariana Castro",
+    "email": "mariana.castro_28@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2024-01-04T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb963c"
+    },
+    "nombre": "Pablo Ramos",
+    "email": "pablo.ramos_29@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2023-10-28T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb963d"
+    },
+    "nombre": "Cecilia Medina",
+    "email": "cecilia.medina_30@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2023-12-20T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb963e"
+    },
+    "nombre": "Emilio García",
+    "email": "emilio.garcía_31@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2023-07-13T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb963f"
+    },
+    "nombre": "Verónica Rodríguez",
+    "email": "verónica.rodríguez_32@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2023-03-06T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9640"
+    },
+    "nombre": "Tomás López",
+    "email": "tomás.lópez_33@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2022-08-14T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9641"
+    },
+    "nombre": "Gabriela Martínez",
+    "email": "gabriela.martínez_34@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2023-04-05T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9642"
+    },
+    "nombre": "Nicolás González",
+    "email": "nicolás.gonzález_35@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2023-08-27T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9643"
+    },
+    "nombre": "Patricia Pérez",
+    "email": "patricia.pérez_36@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2022-10-12T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9644"
+    },
+    "nombre": "Hernán Sánchez",
+    "email": "hernán.sánchez_37@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2024-04-08T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9645"
+    },
+    "nombre": "Sandra Ramírez",
+    "email": "sandra.ramírez_38@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2024-06-09T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9646"
+    },
+    "nombre": "Federico Torres",
+    "email": "federico.torres_39@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2022-01-07T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9647"
+    },
+    "nombre": "Lorena Flores",
+    "email": "lorena.flores_40@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2024-02-17T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9648"
+    },
+    "nombre": "Matías Rivera",
+    "email": "matías.rivera_41@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2024-04-05T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9649"
+    },
+    "nombre": "Mónica Díaz",
+    "email": "mónica.díaz_42@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2022-06-13T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb964a"
+    },
+    "nombre": "Leandro Morales",
+    "email": "leandro.morales_43@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2023-12-16T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb964b"
+    },
+    "nombre": "Susana Jiménez",
+    "email": "susana.jiménez_44@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2023-03-09T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb964c"
+    },
+    "nombre": "Gustavo Ruiz",
+    "email": "gustavo.ruiz_45@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2022-12-15T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb964d"
+    },
+    "nombre": "Cristina Hernández",
+    "email": "cristina.hernández_46@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2022-10-12T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb964e"
+    },
+    "nombre": "Ramón Reyes",
+    "email": "ramón.reyes_47@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2022-06-09T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb964f"
+    },
+    "nombre": "Isabel Cruz",
+    "email": "isabel.cruz_48@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2022-08-09T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9650"
+    },
+    "nombre": "Eduardo Ortiz",
+    "email": "eduardo.ortiz_49@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2024-09-07T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9651"
+    },
+    "nombre": "Adriana Vargas",
+    "email": "adriana.vargas_50@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2024-02-21T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9652"
+    },
+    "nombre": "Juan Romero",
+    "email": "juan.romero_51@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2022-12-11T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9653"
+    },
+    "nombre": "María Castillo",
+    "email": "maría.castillo_52@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2022-04-15T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9654"
+    },
+    "nombre": "Carlos Gutiérrez",
+    "email": "carlos.gutiérrez_53@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2022-04-05T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9655"
+    },
+    "nombre": "Ana Mendoza",
+    "email": "ana.mendoza_54@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2023-01-25T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9656"
+    },
+    "nombre": "Luis Álvarez",
+    "email": "luis.álvarez_55@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2022-04-10T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9657"
+    },
+    "nombre": "Sofía Vega",
+    "email": "sofía.vega_56@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2023-01-03T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9658"
+    },
+    "nombre": "Pedro Guerrero",
+    "email": "pedro.guerrero_57@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2024-05-17T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9659"
+    },
+    "nombre": "Laura Castro",
+    "email": "laura.castro_58@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2022-12-19T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb965a"
+    },
+    "nombre": "Diego Ramos",
+    "email": "diego.ramos_59@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2023-09-11T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb965b"
+    },
+    "nombre": "Valentina Medina",
+    "email": "valentina.medina_60@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2022-09-28T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb965c"
+    },
+    "nombre": "Andrés García",
+    "email": "andrés.garcía_61@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2024-04-06T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb965d"
+    },
+    "nombre": "Camila Rodríguez",
+    "email": "camila.rodríguez_62@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2022-02-14T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb965e"
+    },
+    "nombre": "Roberto López",
+    "email": "roberto.lópez_63@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2024-01-18T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb965f"
+    },
+    "nombre": "Natalia Martínez",
+    "email": "natalia.martínez_64@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2023-04-16T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9660"
+    },
+    "nombre": "Fernando González",
+    "email": "fernando.gonzález_65@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2023-07-04T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9661"
+    },
+    "nombre": "Lucía Pérez",
+    "email": "lucía.pérez_66@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2022-05-08T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9662"
+    },
+    "nombre": "Martín Sánchez",
+    "email": "martín.sánchez_67@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2024-09-23T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9663"
+    },
+    "nombre": "Paula Ramírez",
+    "email": "paula.ramírez_68@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2024-08-02T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9664"
+    },
+    "nombre": "Javier Torres",
+    "email": "javier.torres_69@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2023-01-23T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9665"
+    },
+    "nombre": "Claudia Flores",
+    "email": "claudia.flores_70@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2022-03-22T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9666"
+    },
+    "nombre": "Miguel Rivera",
+    "email": "miguel.rivera_71@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2023-07-20T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9667"
+    },
+    "nombre": "Florencia Díaz",
+    "email": "florencia.díaz_72@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2022-10-28T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9668"
+    },
+    "nombre": "Gabriel Morales",
+    "email": "gabriel.morales_73@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2024-04-29T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9669"
+    },
+    "nombre": "Daniela Jiménez",
+    "email": "daniela.jiménez_74@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2023-10-06T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb966a"
+    },
+    "nombre": "Ricardo Ruiz",
+    "email": "ricardo.ruiz_75@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2023-09-26T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb966b"
+    },
+    "nombre": "Alejandra Hernández",
+    "email": "alejandra.hernández_76@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2024-06-25T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb966c"
+    },
+    "nombre": "Sergio Reyes",
+    "email": "sergio.reyes_77@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2024-06-01T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb966d"
+    },
+    "nombre": "Mariana Cruz",
+    "email": "mariana.cruz_78@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2023-01-06T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb966e"
+    },
+    "nombre": "Pablo Ortiz",
+    "email": "pablo.ortiz_79@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2023-08-15T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb966f"
+    },
+    "nombre": "Cecilia Vargas",
+    "email": "cecilia.vargas_80@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2022-07-16T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9670"
+    },
+    "nombre": "Emilio Romero",
+    "email": "emilio.romero_81@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2023-12-23T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9671"
+    },
+    "nombre": "Verónica Castillo",
+    "email": "verónica.castillo_82@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2022-03-13T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9672"
+    },
+    "nombre": "Tomás Gutiérrez",
+    "email": "tomás.gutiérrez_83@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2022-02-16T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9673"
+    },
+    "nombre": "Gabriela Mendoza",
+    "email": "gabriela.mendoza_84@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2023-11-09T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9674"
+    },
+    "nombre": "Nicolás Álvarez",
+    "email": "nicolás.álvarez_85@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2022-08-22T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9675"
+    },
+    "nombre": "Patricia Vega",
+    "email": "patricia.vega_86@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2024-03-02T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9676"
+    },
+    "nombre": "Hernán Guerrero",
+    "email": "hernán.guerrero_87@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2022-10-24T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9677"
+    },
+    "nombre": "Sandra Castro",
+    "email": "sandra.castro_88@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2022-03-23T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9678"
+    },
+    "nombre": "Federico Ramos",
+    "email": "federico.ramos_89@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2024-05-25T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9679"
+    },
+    "nombre": "Lorena Medina",
+    "email": "lorena.medina_90@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2022-08-27T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb967a"
+    },
+    "nombre": "Matías García",
+    "email": "matías.garcía_91@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2024-06-06T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb967b"
+    },
+    "nombre": "Mónica Rodríguez",
+    "email": "mónica.rodríguez_92@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2022-04-14T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb967c"
+    },
+    "nombre": "Leandro López",
+    "email": "leandro.lópez_93@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2023-01-25T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb967d"
+    },
+    "nombre": "Susana Martínez",
+    "email": "susana.martínez_94@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2022-10-12T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb967e"
+    },
+    "nombre": "Gustavo González",
+    "email": "gustavo.gonzález_95@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2023-04-10T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb967f"
+    },
+    "nombre": "Cristina Pérez",
+    "email": "cristina.pérez_96@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2023-10-13T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9680"
+    },
+    "nombre": "Ramón Sánchez",
+    "email": "ramón.sánchez_97@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2024-05-04T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9681"
+    },
+    "nombre": "Isabel Ramírez",
+    "email": "isabel.ramírez_98@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2023-01-09T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9682"
+    },
+    "nombre": "Eduardo Torres",
+    "email": "eduardo.torres_99@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2022-06-16T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9683"
+    },
+    "nombre": "Adriana Flores",
+    "email": "adriana.flores_100@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2023-01-15T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9684"
+    },
+    "nombre": "Juan Rivera",
+    "email": "juan.rivera_101@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2022-12-30T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9685"
+    },
+    "nombre": "María Díaz",
+    "email": "maría.díaz_102@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2022-08-03T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9686"
+    },
+    "nombre": "Carlos Morales",
+    "email": "carlos.morales_103@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2023-11-18T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9687"
+    },
+    "nombre": "Ana Jiménez",
+    "email": "ana.jiménez_104@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2022-10-01T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9688"
+    },
+    "nombre": "Luis Ruiz",
+    "email": "luis.ruiz_105@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2023-12-20T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9689"
+    },
+    "nombre": "Sofía Hernández",
+    "email": "sofía.hernández_106@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2024-08-17T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb968a"
+    },
+    "nombre": "Pedro Reyes",
+    "email": "pedro.reyes_107@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2023-12-01T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb968b"
+    },
+    "nombre": "Laura Cruz",
+    "email": "laura.cruz_108@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2023-10-26T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb968c"
+    },
+    "nombre": "Diego Ortiz",
+    "email": "diego.ortiz_109@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2022-03-15T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb968d"
+    },
+    "nombre": "Valentina Vargas",
+    "email": "valentina.vargas_110@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2023-09-16T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb968e"
+    },
+    "nombre": "Andrés Romero",
+    "email": "andrés.romero_111@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2023-10-13T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb968f"
+    },
+    "nombre": "Camila Castillo",
+    "email": "camila.castillo_112@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2022-06-25T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9690"
+    },
+    "nombre": "Roberto Gutiérrez",
+    "email": "roberto.gutiérrez_113@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2023-07-01T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9691"
+    },
+    "nombre": "Natalia Mendoza",
+    "email": "natalia.mendoza_114@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2024-01-17T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9692"
+    },
+    "nombre": "Fernando Álvarez",
+    "email": "fernando.álvarez_115@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2022-09-08T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9693"
+    },
+    "nombre": "Lucía Vega",
+    "email": "lucía.vega_116@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2022-06-17T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9694"
+    },
+    "nombre": "Martín Guerrero",
+    "email": "martín.guerrero_117@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2023-04-19T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9695"
+    },
+    "nombre": "Paula Castro",
+    "email": "paula.castro_118@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2023-01-24T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9696"
+    },
+    "nombre": "Javier Ramos",
+    "email": "javier.ramos_119@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2022-10-04T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9697"
+    },
+    "nombre": "Claudia Medina",
+    "email": "claudia.medina_120@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2024-08-05T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9698"
+    },
+    "nombre": "Miguel García",
+    "email": "miguel.garcía_121@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2023-10-18T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb9699"
+    },
+    "nombre": "Florencia Rodríguez",
+    "email": "florencia.rodríguez_122@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2023-12-06T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb969a"
+    },
+    "nombre": "Gabriel López",
+    "email": "gabriel.lópez_123@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2023-07-25T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb969b"
+    },
+    "nombre": "Daniela Martínez",
+    "email": "daniela.martínez_124@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2022-08-13T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb969c"
+    },
+    "nombre": "Ricardo González",
+    "email": "ricardo.gonzález_125@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2023-12-03T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb969d"
+    },
+    "nombre": "Alejandra Pérez",
+    "email": "alejandra.pérez_126@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2022-11-29T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb969e"
+    },
+    "nombre": "Sergio Sánchez",
+    "email": "sergio.sánchez_127@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2024-05-13T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb969f"
+    },
+    "nombre": "Mariana Ramírez",
+    "email": "mariana.ramírez_128@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2024-02-26T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96a0"
+    },
+    "nombre": "Pablo Torres",
+    "email": "pablo.torres_129@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2024-03-05T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96a1"
+    },
+    "nombre": "Cecilia Flores",
+    "email": "cecilia.flores_130@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2022-02-27T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96a2"
+    },
+    "nombre": "Emilio Rivera",
+    "email": "emilio.rivera_131@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2022-08-23T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96a3"
+    },
+    "nombre": "Verónica Díaz",
+    "email": "verónica.díaz_132@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2024-04-21T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96a4"
+    },
+    "nombre": "Tomás Morales",
+    "email": "tomás.morales_133@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2022-02-02T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96a5"
+    },
+    "nombre": "Gabriela Jiménez",
+    "email": "gabriela.jiménez_134@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2024-04-04T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96a6"
+    },
+    "nombre": "Nicolás Ruiz",
+    "email": "nicolás.ruiz_135@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2022-11-20T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96a7"
+    },
+    "nombre": "Patricia Hernández",
+    "email": "patricia.hernández_136@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2023-02-15T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96a8"
+    },
+    "nombre": "Hernán Reyes",
+    "email": "hernán.reyes_137@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2022-10-02T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96a9"
+    },
+    "nombre": "Sandra Cruz",
+    "email": "sandra.cruz_138@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2022-03-09T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96aa"
+    },
+    "nombre": "Federico Ortiz",
+    "email": "federico.ortiz_139@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2022-08-05T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96ab"
+    },
+    "nombre": "Lorena Vargas",
+    "email": "lorena.vargas_140@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2024-07-24T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96ac"
+    },
+    "nombre": "Matías Romero",
+    "email": "matías.romero_141@gmail.com",
+    "pais": "Argentina",
+    "fecha_registro": {
+      "$date": "2024-08-23T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96ad"
+    },
+    "nombre": "Mónica Castillo",
+    "email": "mónica.castillo_142@gmail.com",
+    "pais": "México",
+    "fecha_registro": {
+      "$date": "2023-08-04T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96ae"
+    },
+    "nombre": "Leandro Gutiérrez",
+    "email": "leandro.gutiérrez_143@gmail.com",
+    "pais": "Colombia",
+    "fecha_registro": {
+      "$date": "2024-06-16T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96af"
+    },
+    "nombre": "Susana Mendoza",
+    "email": "susana.mendoza_144@gmail.com",
+    "pais": "Chile",
+    "fecha_registro": {
+      "$date": "2024-01-06T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96b0"
+    },
+    "nombre": "Gustavo Álvarez",
+    "email": "gustavo.álvarez_145@gmail.com",
+    "pais": "Perú",
+    "fecha_registro": {
+      "$date": "2022-11-19T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96b1"
+    },
+    "nombre": "Cristina Vega",
+    "email": "cristina.vega_146@gmail.com",
+    "pais": "España",
+    "fecha_registro": {
+      "$date": "2022-08-06T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96b2"
+    },
+    "nombre": "Ramón Guerrero",
+    "email": "ramón.guerrero_147@gmail.com",
+    "pais": "Uruguay",
+    "fecha_registro": {
+      "$date": "2023-11-03T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96b3"
+    },
+    "nombre": "Isabel Castro",
+    "email": "isabel.castro_148@gmail.com",
+    "pais": "Brasil",
+    "fecha_registro": {
+      "$date": "2023-05-27T00:00:00.000Z"
+    },
+    "plan_suscripcion": "gratuito",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96b4"
+    },
+    "nombre": "Eduardo Ramos",
+    "email": "eduardo.ramos_149@gmail.com",
+    "pais": "Venezuela",
+    "fecha_registro": {
+      "$date": "2023-02-10T00:00:00.000Z"
+    },
+    "plan_suscripcion": "basico",
+    "idioma_preferido": "es"
+  },
+  {
+    "_id": {
+      "$oid": "69da83d24fd7e59767eb96b5"
+    },
+    "nombre": "Adriana Medina",
+    "email": "adriana.medina_150@gmail.com",
+    "pais": "Ecuador",
+    "fecha_registro": {
+      "$date": "2024-06-24T00:00:00.000Z"
+    },
+    "plan_suscripcion": "premium",
+    "idioma_preferido": "es"
+  }
+]

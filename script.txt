@@ -1,0 +1,75 @@
+// ══════════════════════════════════════════════
+// LIMPIEZA
+// ══════════════════════════════════════════════
+MATCH (n) DETACH DELETE n;
+
+DROP CONSTRAINT alumno_unique IF EXISTS;
+DROP CONSTRAINT curso_unique IF EXISTS;
+DROP CONSTRAINT cert_unique IF EXISTS;
+
+// ══════════════════════════════════════════════
+// CONSTRAINTS
+// ══════════════════════════════════════════════
+CREATE CONSTRAINT alumno_unique   IF NOT EXISTS FOR (a:Alumno)        REQUIRE a.id_alumno IS UNIQUE;
+CREATE CONSTRAINT curso_unique    IF NOT EXISTS FOR (c:Curso)         REQUIRE c.id_curso  IS UNIQUE;
+CREATE CONSTRAINT cert_unique     IF NOT EXISTS FOR (ce:Certificacion) REQUIRE ce.id_cert IS UNIQUE;
+
+// ══════════════════════════════════════════════
+// 1. NODOS: Alumnos
+// ══════════════════════════════════════════════
+LOAD CSV WITH HEADERS FROM 'file:///alumnos.csv' AS row
+MERGE (a:Alumno {id_alumno: row._id})
+SET a.nombre           = row.nombre,
+    a.pais             = row.pais,
+    a.plan_suscripcion = row.plan_suscripcion;
+
+// ══════════════════════════════════════════════
+// 2. NODOS: Cursos
+// ══════════════════════════════════════════════
+LOAD CSV WITH HEADERS FROM 'file:///cursos.csv' AS row
+MERGE (c:Curso {id_curso: row._id})
+SET c.nombre    = row.nombre,
+    c.categoria = row.categoria,
+    c.nivel     = row.nivel,
+    c.modalidad = row.modalidad;
+
+// ══════════════════════════════════════════════
+// 3. NODOS: Certificaciones
+// ══════════════════════════════════════════════
+LOAD CSV WITH HEADERS FROM 'file:///rutas_certificacion.csv' AS row
+MERGE (ce:Certificacion {id_cert: row._id})
+SET ce.nombre       = row.nombre,
+    ce.categoria    = row.categoria,
+    ce.descripcion  = row.descripcion,
+    ce.total_cursos = toInteger(row.total_cursos);
+
+// ══════════════════════════════════════════════
+// 4. RELACIONES: (Alumno)-[:INSCRIPTO_EN]->(Curso)
+// ══════════════════════════════════════════════
+LOAD CSV WITH HEADERS FROM 'file:///inscripciones.csv' AS row
+MATCH (a:Alumno {id_alumno: row.alumno_id})
+MATCH (c:Curso  {id_curso:  row.curso_id})
+MERGE (a)-[r:INSCRIPTO_EN {id_inscripcion: row._id}]->(c)
+SET r.fecha_inicio        = row.fecha_inicio,
+    r.estado              = row.estado,
+    r.porcentaje_progreso = toFloat(row.porcentaje_progreso);
+
+// ══════════════════════════════════════════════
+// 5. RELACIONES: (Curso)-[:REQUIERE]->(Curso)
+// ══════════════════════════════════════════════
+LOAD CSV WITH HEADERS FROM 'file:///prerrequisitos.csv' AS row
+MATCH (c:Curso {id_curso: row.curso_id})
+MATCH (p:Curso {id_curso: row.prerequisito_id})
+MERGE (c)-[r:REQUIERE]->(p)
+SET r.obligatorio = (row.obligatorio = 'True');
+
+// ══════════════════════════════════════════════
+// 6. RELACIONES: (Certificacion)-[:INCLUYE]->(Curso)
+// ══════════════════════════════════════════════
+LOAD CSV WITH HEADERS FROM 'file:///rutas_certificacion.csv' AS row
+MATCH (ce:Certificacion {id_cert: row._id})
+WITH ce, split(row.cursos, ',') AS lista
+UNWIND range(0, size(lista)-1) AS i
+MATCH (c:Curso {id_curso: trim(lista[i])})
+MERGE (ce)-[r:INCLUYE]->(c)
+SET r.orden = i + 1;

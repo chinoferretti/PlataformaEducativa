@@ -1,0 +1,1312 @@
+[
+  {
+    "_id": {
+      "$oid": "69da7b979910d1443467655e"
+    },
+    "nombre": "Carlos Méndez",
+    "email": "carlos.méndez.inst@gmail.com",
+    "especialidad": "Programación",
+    "calificacion_promedio": 4.3,
+    "cursos_dictados": [
+      {
+        "$oid": "43f24eade880a0431f50ceea"
+      },
+      {
+        "$oid": "1b82e2bb4c6b6bce636f5f4a"
+      },
+      {
+        "$oid": "78661a240af252fd88fcafb1"
+      },
+      {
+        "$oid": "02ce056c069ef09aed58ec80"
+      },
+      {
+        "$oid": "bb497b8dd81a4093d54d121e"
+      },
+      {
+        "$oid": "3f4cad55205ae0e4521c872c"
+      },
+      {
+        "$oid": "e14f85cb5347d564b3ae5a34"
+      },
+      {
+        "$oid": "209aa11b0b7146d284b7a941"
+      },
+      {
+        "$oid": "5b7788707e6b9903f59bcdc1"
+      },
+      {
+        "$oid": "61931b38cf0facd97a6a08c8"
+      },
+      {
+        "$oid": "a6bccdb36122f1f020eab600"
+      },
+      {
+        "$oid": "8c27d5e6af26f420ecaf37de"
+      },
+      {
+        "$oid": "40ce80d7cd372518ab311e8c"
+      },
+      {
+        "$oid": "64ae34efc1ad5e45a1bd56ea"
+      },
+      {
+        "$oid": "ff76ed9846096dacb58a643d"
+      },
+      {
+        "$oid": "99132225ee291ee561890f10"
+      },
+      {
+        "$oid": "23ccfc6c68bcd84311daddd1"
+      },
+      {
+        "$oid": "2771d806d5f260c6484e1a78"
+      },
+      {
+        "$oid": "fc661ce144868e048cfdd13a"
+      },
+      {
+        "$oid": "d725e4d0b956183de589eacc"
+      },
+      {
+        "$oid": "d064249719108b99c3e3fcb6"
+      },
+      {
+        "$oid": "5c702be035d1633733016539"
+      },
+      {
+        "$oid": "a5b9905a4489fce779a099a9"
+      },
+      {
+        "$oid": "b6a72cc86d92aa2c5e368615"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69da7b979910d1443467655f"
+    },
+    "nombre": "Ana Rodríguez",
+    "email": "ana.rodríguez.inst@gmail.com",
+    "especialidad": "Data Science",
+    "calificacion_promedio": 4.35,
+    "cursos_dictados": [
+      {
+        "$oid": "8f9b34c95653d4bd2293202c"
+      },
+      {
+        "$oid": "c75b693192bb2bfd633d6624"
+      },
+      {
+        "$oid": "c53176183772b9f85bd1d560"
+      },
+      {
+        "$oid": "c93c55b25c8d6a0dbfa869fe"
+      },
+      {
+        "$oid": "bc737067532a4d79aa186be9"
+      },
+      {
+        "$oid": "cd0f21c4cc9b7a88497231fe"
+      },
+      {
+        "$oid": "0db61feb918427ff44200e61"
+      },
+      {
+        "$oid": "e1564d2a48ee39344ee08ebc"
+      },
+      {
+        "$oid": "303d5409cc6f0bcd1069cf99"
+      },
+      {
+        "$oid": "82799c375bec520d12c02fef"
+      },
+      {
+        "$oid": "8005b7db644f5dbc71c3ba12"
+      },
+      {
+        "$oid": "28e3b53799dc1783b9bc09bc"
+      },
+      {
+        "$oid": "59cd120cfdaa85227ad624b6"
+      },
+      {
+        "$oid": "7f989066dce40f3e0dc1059a"
+      },
+      {
+        "$oid": "30bd54e7a5bcfc2655f7bbe9"
+      },
+      {
+        "$oid": "5f66934541d259c9ae6e071d"
+      },
+      {
+        "$oid": "6fe0c0e9afc44612ed756bdd"
+      },
+      {
+        "$oid": "14b7599f4884f8362f3b0db4"
+      },
+      {
+        "$oid": "9e0309ce80f651674a3a8bbc"
+      },
+      {
+        "$oid": "c7d2988bf457398fc50ce876"
+      },
+      {
+        "$oid": "6c5d553bfc69f76fe011c5cb"
+      },
+      {
+        "$oid": "e35dc5a2f83627525c1d40ca"
+      },
+      {
+        "$oid": "8107320eeb4e4b0f9bb808b3"
+      },
+      {
+        "$oid": "c2805069946f94290c9b6a34"
+      },
+      {
+        "$oid": "0cbceb7af0ae4c508b6aa280"
+      },
+      {
+        "$oid": "a998e2dff83012bf1e06c1e7"
+      },
+      {
+        "$oid": "5622867f928417151ec4a8f4"
+      },
+      {
+        "$oid": "392d0b982221c4f435b8346f"
+      },
+      {
+        "$oid": "de879c7e576bfd4a657f0b96"
+      },
+      {
+        "$oid": "03e7fbe1614f0908c9d767b7"
+      },
+      {
+        "$oid": "ae445aaa0b830898fc8353f9"
+      },
+      {
+        "$oid": "42b3f6d67c62ada63f6f6fec"
+      },
+      {
+        "$oid": "2d7f2f3e3fc2def62b69f5f3"
+      },
+      {
+        "$oid": "75fc47ce75a9e4ca48fc5aa4"
+      },
+      {
+        "$oid": "60d5543a8799eb6a745bd286"
+      },
+      {
+        "$oid": "c54ae587c42f9d99a41faa72"
+      },
+      {
+        "$oid": "62445746de1d77f0279639ae"
+      },
+      {
+        "$oid": "e89059f0275d0e550ff77902"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69da7b979910d14434676560"
+    },
+    "nombre": "Luis García",
+    "email": "luis.garcía.inst@gmail.com",
+    "especialidad": "DevOps",
+    "calificacion_promedio": 4.36,
+    "cursos_dictados": [
+      {
+        "$oid": "677a20a7a2957691b1b77a92"
+      },
+      {
+        "$oid": "dd9cc2e07ff56df24d813537"
+      },
+      {
+        "$oid": "1089d1b98cd7b6100ed625d6"
+      },
+      {
+        "$oid": "b6e62b39fffa520322e9fb37"
+      },
+      {
+        "$oid": "4bd79f1f5f2558e5078a17d4"
+      },
+      {
+        "$oid": "6a2404a10a560eefb6f21712"
+      },
+      {
+        "$oid": "79d25fe3b343133f3da003ae"
+      },
+      {
+        "$oid": "968c7f3330f70a324bf4c21d"
+      },
+      {
+        "$oid": "fec1070bb7d28226eb6b160b"
+      },
+      {
+        "$oid": "c4dc5cbbbd96c1083b70a426"
+      },
+      {
+        "$oid": "ad7989f6a9e744ee08eff271"
+      },
+      {
+        "$oid": "2bd0e7823a709027a68c6563"
+      },
+      {
+        "$oid": "c5b490776ce1bf0c5ef6c478"
+      },
+      {
+        "$oid": "c8d268b47f3e1ae39c23bc0c"
+      },
+      {
+        "$oid": "8c92ebf3dad9f4daff6a6870"
+      },
+      {
+        "$oid": "55b79576b3b2aa2d83270082"
+      },
+      {
+        "$oid": "366b4f17e8cd10c24f1de08f"
+      },
+      {
+        "$oid": "6f91c5db9cd5b8a276976b7b"
+      },
+      {
+        "$oid": "cd9df6caff20ce4a6ad74606"
+      },
+      {
+        "$oid": "11527333f449eede87cfb9a1"
+      },
+      {
+        "$oid": "65f74b93aa0c0256a94f3501"
+      },
+      {
+        "$oid": "b2a1cbcc7ab986a3f85a03cd"
+      },
+      {
+        "$oid": "1ef2e829f1af258397286c4e"
+      },
+      {
+        "$oid": "78576647375d511648f1e41d"
+      },
+      {
+        "$oid": "835a5ee5c81eccf26c46906e"
+      },
+      {
+        "$oid": "4dd624bed319d9c8d4531940"
+      },
+      {
+        "$oid": "8adf7b544e77f203e84d2a23"
+      },
+      {
+        "$oid": "0992ddc46a5576c547e9d8e6"
+      },
+      {
+        "$oid": "7f6cd6c847779febe2a95b3b"
+      },
+      {
+        "$oid": "7ff5627c8e5895520b81e013"
+      },
+      {
+        "$oid": "6590ffb91933322476236461"
+      },
+      {
+        "$oid": "5f53c9e850a9fd3556968924"
+      },
+      {
+        "$oid": "030529a78ce74d189c40d33d"
+      },
+      {
+        "$oid": "738b61a09fc18e933de4087f"
+      },
+      {
+        "$oid": "ec51a7638a64d32578217059"
+      },
+      {
+        "$oid": "72588080ebabc6ceafbc38ee"
+      },
+      {
+        "$oid": "d726bbbc9ff473d9d8ee4b95"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69da7b979910d14434676561"
+    },
+    "nombre": "María López",
+    "email": "maría.lópez.inst@gmail.com",
+    "especialidad": "Inteligencia Artificial",
+    "calificacion_promedio": 4.25,
+    "cursos_dictados": [
+      {
+        "$oid": "d6a82a951b923e0a443cdef3"
+      },
+      {
+        "$oid": "c4cfbb8a096802f6d67c8720"
+      },
+      {
+        "$oid": "a56a62c3c4ef7978e497cd2f"
+      },
+      {
+        "$oid": "2b8d6f81430b0b04a8778c53"
+      },
+      {
+        "$oid": "5329c88e8586f91e2898878d"
+      },
+      {
+        "$oid": "43b974fc527257aee2f150a9"
+      },
+      {
+        "$oid": "0ffc361ace5bcdc1fa2bc630"
+      },
+      {
+        "$oid": "8eb1fbef8b8296779ce47ad5"
+      },
+      {
+        "$oid": "bbc234101ac8424fdc2ff9e1"
+      },
+      {
+        "$oid": "6d6834c45bb765b3b8e87f79"
+      },
+      {
+        "$oid": "d13258c3b7e52dfd91c08768"
+      },
+      {
+        "$oid": "489ebd994360aa94b4aebca3"
+      },
+      {
+        "$oid": "c18630e586932350eee21cd7"
+      },
+      {
+        "$oid": "2dc7a9ddcf2b2a44be8de111"
+      },
+      {
+        "$oid": "c73f6d73520036325d79a791"
+      },
+      {
+        "$oid": "a08612cec422e847b81126ef"
+      },
+      {
+        "$oid": "c5128be4ab7308e92eab5b8d"
+      },
+      {
+        "$oid": "6d92da5dc4ba44e676dc9cfd"
+      },
+      {
+        "$oid": "b0489cc905165d5f38dc7d84"
+      },
+      {
+        "$oid": "37a549f681c253c111ec4d29"
+      },
+      {
+        "$oid": "b55ecda4bd089262b3cb94b8"
+      },
+      {
+        "$oid": "252fff0a1f783f2425d3f861"
+      },
+      {
+        "$oid": "3e013b961709eb2ce1155e85"
+      },
+      {
+        "$oid": "382d68320b47d0423299824a"
+      },
+      {
+        "$oid": "9c70413b45ccae59d022953f"
+      },
+      {
+        "$oid": "e62b79ddd72ab034c4ebbd61"
+      },
+      {
+        "$oid": "ed182de0137420a4c4f8ad66"
+      },
+      {
+        "$oid": "bfb094afebf74c82cf08871a"
+      },
+      {
+        "$oid": "4b4897f19cf5272eb7338e6f"
+      },
+      {
+        "$oid": "20244a6538351ee94a93b495"
+      },
+      {
+        "$oid": "1c3c73071e0addfb41186abf"
+      },
+      {
+        "$oid": "070c7e58184d385ae1eb3a18"
+      },
+      {
+        "$oid": "cfcdd462e46994249ef52acb"
+      },
+      {
+        "$oid": "9db0d48b379f58eb68a895e3"
+      },
+      {
+        "$oid": "80a94b0d849ae96b195c3121"
+      },
+      {
+        "$oid": "1f4e86556b7dc462472d4ac4"
+      },
+      {
+        "$oid": "b8fc3fad468c598161ae5929"
+      },
+      {
+        "$oid": "e7df8db87883b10d31e12938"
+      },
+      {
+        "$oid": "1af489ae4af0501afca92349"
+      },
+      {
+        "$oid": "432150435660fd2fbd08ae4b"
+      },
+      {
+        "$oid": "8716ee22fa7989252e15cb99"
+      },
+      {
+        "$oid": "686a5abede683a93f5b8424a"
+      },
+      {
+        "$oid": "ca5443b16b51d8b56699825e"
+      },
+      {
+        "$oid": "a243871170f5d82053f1b85c"
+      },
+      {
+        "$oid": "8e5cddbe6f4c9df05fe8a15d"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69da7b979910d14434676562"
+    },
+    "nombre": "Pedro Fernández",
+    "email": "pedro.fernández.inst@gmail.com",
+    "especialidad": "Bases de Datos",
+    "calificacion_promedio": 4.18,
+    "cursos_dictados": [
+      {
+        "$oid": "6b641b3bab20dd488546a1a9"
+      },
+      {
+        "$oid": "67dd30d73aa83f8cff5f9af7"
+      },
+      {
+        "$oid": "16badeacb50164ea5ae54e83"
+      },
+      {
+        "$oid": "bdc9cbf10fe2e2e76ea37f12"
+      },
+      {
+        "$oid": "95a9e846b21ec7cb57e8b4a2"
+      },
+      {
+        "$oid": "e7cc6f9093307c14804142f3"
+      },
+      {
+        "$oid": "caa0e8facc3a8eb7680aadfc"
+      },
+      {
+        "$oid": "edfaf47631c81ff122728ed6"
+      },
+      {
+        "$oid": "5769bfc26e69bb91c8e704c7"
+      },
+      {
+        "$oid": "f05d5c0e0af0777370772af6"
+      },
+      {
+        "$oid": "a877af7e6dbb03b1f9692843"
+      },
+      {
+        "$oid": "5c56bf6378c095e69adf47dc"
+      },
+      {
+        "$oid": "fb80af7f744234645636c920"
+      },
+      {
+        "$oid": "8901d4815b96f5ef39b78b60"
+      },
+      {
+        "$oid": "04b7cd037f69568004b89edc"
+      },
+      {
+        "$oid": "8cdf1252e0b513b4ab3a9d64"
+      },
+      {
+        "$oid": "568ee98afbc09ae40d67c176"
+      },
+      {
+        "$oid": "8cc9d136dd6c30d252c3cbeb"
+      },
+      {
+        "$oid": "68f4cbeb8637a05dd1dc8e08"
+      },
+      {
+        "$oid": "2222b4d45a2c110553a8f8d2"
+      },
+      {
+        "$oid": "72be9cad2f3a76d7c1c6f3ff"
+      },
+      {
+        "$oid": "b80b7731e2014d32c05fd28a"
+      },
+      {
+        "$oid": "74c43b33cfd410afccf8691d"
+      },
+      {
+        "$oid": "9cbc95c656074df65ddbc5de"
+      },
+      {
+        "$oid": "05529962b5cb138c68dccb07"
+      },
+      {
+        "$oid": "62e57bc742498a9ac2923495"
+      },
+      {
+        "$oid": "3a582726d7ee3ed5902d6a3e"
+      },
+      {
+        "$oid": "b45a8b48cae1d0ab40a73d0c"
+      },
+      {
+        "$oid": "08970f93af9efef901348b38"
+      },
+      {
+        "$oid": "0fe0fdc20fe78a8e065b4966"
+      },
+      {
+        "$oid": "5d605c5da066147bfcfe003c"
+      },
+      {
+        "$oid": "ead26853403256005565fdbf"
+      },
+      {
+        "$oid": "4480f783451814921e9f33ac"
+      },
+      {
+        "$oid": "b349db16cd5eef89649b3417"
+      },
+      {
+        "$oid": "1d392550781841d30e757937"
+      },
+      {
+        "$oid": "4bb373d5abafc0da68d004cc"
+      },
+      {
+        "$oid": "f8d49b35034a3cce75835246"
+      },
+      {
+        "$oid": "1da8193948e4e47605fda3bf"
+      },
+      {
+        "$oid": "fb49ba430fb163fc41ec7be0"
+      },
+      {
+        "$oid": "a3ae1a7b4d8f81442b2f967d"
+      },
+      {
+        "$oid": "9b7b7a0171aac9ecbf300dc8"
+      },
+      {
+        "$oid": "e9646e03a4675c7a95d4e89b"
+      },
+      {
+        "$oid": "bf1eaa1f6886b7efeb606003"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69da7b979910d14434676563"
+    },
+    "nombre": "Sofía Martínez",
+    "email": "sofía.martínez.inst@gmail.com",
+    "especialidad": "Diseño UX",
+    "calificacion_promedio": 4.29,
+    "cursos_dictados": [
+      {
+        "$oid": "e81775f3ca4225f72051e671"
+      },
+      {
+        "$oid": "275cecdc2d768558fb0d7d65"
+      },
+      {
+        "$oid": "5a1fc977cc83fb4741a0f665"
+      },
+      {
+        "$oid": "a0a54ad3e1002d12d3234519"
+      },
+      {
+        "$oid": "7be4bd5ee6e273cfc93c8acc"
+      },
+      {
+        "$oid": "49ebf39d5a5e9beb8557e261"
+      },
+      {
+        "$oid": "7525afd138152a0c257b1284"
+      },
+      {
+        "$oid": "00bdfb1cc244197281a0f807"
+      },
+      {
+        "$oid": "35ac016c6a54ffb80016d53f"
+      },
+      {
+        "$oid": "4b1e7a0fe9db5edeb83cc313"
+      },
+      {
+        "$oid": "0eaf4255c63433a93baf9d01"
+      },
+      {
+        "$oid": "2ccab8a14a62c07fc6ee73fa"
+      },
+      {
+        "$oid": "1564d731372cadad58f12696"
+      },
+      {
+        "$oid": "94f770ec20ba8120c3cc2246"
+      },
+      {
+        "$oid": "fe4c528e4224d60d2936619a"
+      },
+      {
+        "$oid": "0e688e2e797319888c0c418f"
+      },
+      {
+        "$oid": "eeb6fce1a35c17984a82f4fd"
+      },
+      {
+        "$oid": "dd9e401de016760478a03456"
+      },
+      {
+        "$oid": "03a4128914f58630aa6f69d8"
+      },
+      {
+        "$oid": "f6e2ea16270c484b634cc6b6"
+      },
+      {
+        "$oid": "37087b58caef580de4f6d03a"
+      },
+      {
+        "$oid": "93ff009839c4a1c6e3cb42d3"
+      },
+      {
+        "$oid": "ef16168fa3a5862711f494ed"
+      },
+      {
+        "$oid": "b81b10a0a4d76a6918f9d175"
+      },
+      {
+        "$oid": "a2c871f523e64a2d1337bbab"
+      },
+      {
+        "$oid": "b874b092216e14ba715dcc1b"
+      },
+      {
+        "$oid": "0f208fa3731dff8c054cb69b"
+      },
+      {
+        "$oid": "dc90497269079de65bda58f5"
+      },
+      {
+        "$oid": "8af19609d7946990cb2d58c6"
+      },
+      {
+        "$oid": "7143e32d1e2ef60018ff3cf5"
+      },
+      {
+        "$oid": "190b62f8b1d3355a8bb3ed3b"
+      },
+      {
+        "$oid": "879bd3e2b9f87d3fe725724c"
+      },
+      {
+        "$oid": "db123f7fcbbd8054e0501564"
+      },
+      {
+        "$oid": "81e03b7e6ed29a8953da7a8a"
+      },
+      {
+        "$oid": "93b120463b8740700bfdbe09"
+      },
+      {
+        "$oid": "32e8a8d8b869d3fd105b2b18"
+      },
+      {
+        "$oid": "0b64d715256d665831bc4289"
+      },
+      {
+        "$oid": "2e07f47ef0b376685c8864c1"
+      },
+      {
+        "$oid": "5c27ff15dc25940a73d260eb"
+      },
+      {
+        "$oid": "b40764e2acef69b8f0124e08"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69da7b979910d14434676564"
+    },
+    "nombre": "Diego Torres",
+    "email": "diego.torres.inst@gmail.com",
+    "especialidad": "Ciberseguridad",
+    "calificacion_promedio": 4.18,
+    "cursos_dictados": [
+      {
+        "$oid": "908b3b0a44ac04d231b4af8d"
+      },
+      {
+        "$oid": "e8c1e791e64b0a58810dc355"
+      },
+      {
+        "$oid": "215821bfa047582c5ee05bc1"
+      },
+      {
+        "$oid": "4087c6df214da7cc5c747006"
+      },
+      {
+        "$oid": "24dee1bab59113a89a99aa36"
+      },
+      {
+        "$oid": "9e384d5ea8455429fa161a54"
+      },
+      {
+        "$oid": "0e616682dab6949a7022546c"
+      },
+      {
+        "$oid": "a02d7608969a8612715bc6f7"
+      },
+      {
+        "$oid": "30bc9836bfa8c80660e71a10"
+      },
+      {
+        "$oid": "2a007e583ec8cd7c3914299c"
+      },
+      {
+        "$oid": "d9dcb16a5e240c7f3ec7916e"
+      },
+      {
+        "$oid": "3f7541dbcd446dd623dc807b"
+      },
+      {
+        "$oid": "180f982a7c9c275adf6c1ce7"
+      },
+      {
+        "$oid": "f6a7db21f4cba4897ffc272d"
+      },
+      {
+        "$oid": "dad1ad9134e350c338c7ebf8"
+      },
+      {
+        "$oid": "f631e519be7a05ce7c5e6403"
+      },
+      {
+        "$oid": "64df891f1c87112babfd68fe"
+      },
+      {
+        "$oid": "e37812c408ee1fd044590643"
+      },
+      {
+        "$oid": "c0901ab732615de9c00a8399"
+      },
+      {
+        "$oid": "deeb48500e4e6230bc4d2f36"
+      },
+      {
+        "$oid": "7d614e5e5314567e9f019396"
+      },
+      {
+        "$oid": "f7bd9771809bde2e5f5b9902"
+      },
+      {
+        "$oid": "83933a959b7ecbbb87f5ab49"
+      },
+      {
+        "$oid": "669e289a5f344587499ee837"
+      },
+      {
+        "$oid": "f8a7569334f31369cc4bbeef"
+      },
+      {
+        "$oid": "71c29a9247ee2e24c17f1ff7"
+      },
+      {
+        "$oid": "66bf279924030da5f5834a23"
+      },
+      {
+        "$oid": "ac7065ef2f24f495d8b6e927"
+      },
+      {
+        "$oid": "16ad44ef50fa9aaa689296f7"
+      },
+      {
+        "$oid": "e6141aea2aa86a94b231d081"
+      },
+      {
+        "$oid": "291822bf128af75a4f646a3b"
+      },
+      {
+        "$oid": "d3ba9080b998d5f81e46d7af"
+      },
+      {
+        "$oid": "54aabd5b7d96063defa1721a"
+      },
+      {
+        "$oid": "122ba183fec9d426bc66e0a3"
+      },
+      {
+        "$oid": "55e4dcec1ab4089d323b71dd"
+      },
+      {
+        "$oid": "c386d850924f198de0edbd77"
+      },
+      {
+        "$oid": "24c01e9ab48671edee0a2828"
+      },
+      {
+        "$oid": "42d71153cacdc6f8a2b1adfb"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69da7b979910d14434676565"
+    },
+    "nombre": "Laura Sánchez",
+    "email": "laura.sánchez.inst@gmail.com",
+    "especialidad": "Cloud Computing",
+    "calificacion_promedio": 4.16,
+    "cursos_dictados": [
+      {
+        "$oid": "a2d6654ca39de37d06173fd3"
+      },
+      {
+        "$oid": "f994fbe788f08d93206055c1"
+      },
+      {
+        "$oid": "3993539e5e76d1e0b9f082f1"
+      },
+      {
+        "$oid": "ed5ae2524a98164ab2e637d9"
+      },
+      {
+        "$oid": "e9a1f36fb870766cbb314a22"
+      },
+      {
+        "$oid": "c7032d222b0bbfd36bda7c4d"
+      },
+      {
+        "$oid": "0c1eacc6aa83c5e32b8f377d"
+      },
+      {
+        "$oid": "5b40ff12ef672467f458ffc0"
+      },
+      {
+        "$oid": "2b2dc9838788fa0828aae865"
+      },
+      {
+        "$oid": "fb59e2c3344da8819e097d92"
+      },
+      {
+        "$oid": "7704ab8b2f7dcaac122d4f4d"
+      },
+      {
+        "$oid": "c607cd43b9c7c3b1f4995813"
+      },
+      {
+        "$oid": "94b527667a910dfebdec24e8"
+      },
+      {
+        "$oid": "c84937a812e7598209e954de"
+      },
+      {
+        "$oid": "dd245f22f0415796eea4943c"
+      },
+      {
+        "$oid": "ba9db00baa6d06e26936cbd1"
+      },
+      {
+        "$oid": "c12101794941cabd69925c4d"
+      },
+      {
+        "$oid": "baa8cc685b81e6090f538ec4"
+      },
+      {
+        "$oid": "8844bee623e05a218df317f7"
+      },
+      {
+        "$oid": "d3ae6bf99404105b459e66c4"
+      },
+      {
+        "$oid": "774449229fd677c76bc92426"
+      },
+      {
+        "$oid": "5eaf45d5a334240179b3494e"
+      },
+      {
+        "$oid": "ff3c3fb33418bd5992c7a990"
+      },
+      {
+        "$oid": "0d0937b8097afd1a42d27865"
+      },
+      {
+        "$oid": "4b234f0012573c35505057d4"
+      },
+      {
+        "$oid": "8278350ff3c325f4c9c0fd25"
+      },
+      {
+        "$oid": "564f776dd5f1d4b7def6de4e"
+      },
+      {
+        "$oid": "07775f21589b5f4a74194bbd"
+      },
+      {
+        "$oid": "dcc68f29383e1bc7cafcb298"
+      },
+      {
+        "$oid": "34491c3a187cce3d2cfd3ed1"
+      },
+      {
+        "$oid": "4fbf13ef75d7800b4dd57a2b"
+      },
+      {
+        "$oid": "f895185afbcb477107107d97"
+      },
+      {
+        "$oid": "296896ab8193a2b6df01ec04"
+      },
+      {
+        "$oid": "060d9eabab8c3cbd2c44b5b6"
+      },
+      {
+        "$oid": "aaea599e90974e9f983efb22"
+      },
+      {
+        "$oid": "c824d3881a6e052e4aee2279"
+      },
+      {
+        "$oid": "96de4a1594594dd4aecb44c2"
+      },
+      {
+        "$oid": "995e1b42cd2015c787f725cf"
+      },
+      {
+        "$oid": "af1f97a2e95fd4e2b79e04d4"
+      },
+      {
+        "$oid": "19bfa2dd63c2e14c705a8170"
+      },
+      {
+        "$oid": "4e91e5dd04035d24994b7732"
+      },
+      {
+        "$oid": "241e07e33eea59e3921c464a"
+      },
+      {
+        "$oid": "e6c38f8fffcafa25daa8db37"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69da7b979910d14434676566"
+    },
+    "nombre": "Andrés Herrera",
+    "email": "andrés.herrera.inst@gmail.com",
+    "especialidad": "Programación",
+    "calificacion_promedio": 4.34,
+    "cursos_dictados": [
+      {
+        "$oid": "ea1c8f1965540577572c6eda"
+      },
+      {
+        "$oid": "1008e3a2e341fb05b020112a"
+      },
+      {
+        "$oid": "035205d79b6830760b1cadd2"
+      },
+      {
+        "$oid": "79a45bd7e057571d204b2ae8"
+      },
+      {
+        "$oid": "ba8d709342a73a7e06d6c879"
+      },
+      {
+        "$oid": "d14f568f6364d5e0d65a2a5e"
+      },
+      {
+        "$oid": "24ca4839c617d2a2b60fa131"
+      },
+      {
+        "$oid": "5e45a4d8102c62758c36ea2a"
+      },
+      {
+        "$oid": "cc62b473f78b0717f6f3ac58"
+      },
+      {
+        "$oid": "2890f61e2e4fea4f06977905"
+      },
+      {
+        "$oid": "a78afc1b3caf182aa835d331"
+      },
+      {
+        "$oid": "24345fed063f125ba31998aa"
+      },
+      {
+        "$oid": "39b788ea798b0635fbd77cf5"
+      },
+      {
+        "$oid": "a6073e014f9c0095f9a06c0a"
+      },
+      {
+        "$oid": "b99d0b178ca639d3eaf034b6"
+      },
+      {
+        "$oid": "a1f922377f7e4ce7e24cf2af"
+      },
+      {
+        "$oid": "238849a5209d0897aed82e1a"
+      },
+      {
+        "$oid": "35be1765123f9fff74fe4d76"
+      },
+      {
+        "$oid": "2c5f51aa2e8733cd892d7531"
+      },
+      {
+        "$oid": "d59f72b4da162ddab3e7e901"
+      },
+      {
+        "$oid": "96d2f24b5db544f5a9b8fc0a"
+      },
+      {
+        "$oid": "b0745d89a52c96490bda7086"
+      },
+      {
+        "$oid": "5383c96022d31f05843dcb0c"
+      },
+      {
+        "$oid": "7ba5b2b7222d1ce715ec0f7d"
+      },
+      {
+        "$oid": "08e51043b83b755ee65174bb"
+      },
+      {
+        "$oid": "48c23fd389e2cfb9b767a198"
+      },
+      {
+        "$oid": "2872fd10cf5ef7e3b8e656f4"
+      },
+      {
+        "$oid": "27fa5995947cc6a03e9713b0"
+      },
+      {
+        "$oid": "50b6e4e58b95632a0dae39c4"
+      },
+      {
+        "$oid": "5e15edf0fc734fea8636bbcd"
+      },
+      {
+        "$oid": "26393c2ae80d62603c172557"
+      },
+      {
+        "$oid": "424d127ab7dddd4fc5d39562"
+      },
+      {
+        "$oid": "e9c8522f77130d64fde6d4f0"
+      },
+      {
+        "$oid": "451b4e4da923ca1d5c0856d6"
+      },
+      {
+        "$oid": "80d6914714ba188ee84fb7e1"
+      },
+      {
+        "$oid": "6d30546609bee500fe479117"
+      },
+      {
+        "$oid": "cee98fff0423cf5b0402302c"
+      },
+      {
+        "$oid": "76c529e5c21245e8960c81ff"
+      },
+      {
+        "$oid": "44439ec49211bbff0121e646"
+      },
+      {
+        "$oid": "706e07de7f1dfee0b7dfe74e"
+      },
+      {
+        "$oid": "e4bbb57335ca34b7ddfe594d"
+      },
+      {
+        "$oid": "4b42debe093ff4534346ab06"
+      },
+      {
+        "$oid": "42f36b7c9816d1f3e6c68d74"
+      },
+      {
+        "$oid": "4173ab25c5bc0769231cf34f"
+      },
+      {
+        "$oid": "dbed34bb54f10e83a0e5d00d"
+      },
+      {
+        "$oid": "763b2cea364771bf847a6dd3"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69da7b979910d14434676567"
+    },
+    "nombre": "Valentina Díaz",
+    "email": "valentina.díaz.inst@gmail.com",
+    "especialidad": "Data Science",
+    "calificacion_promedio": 4.3,
+    "cursos_dictados": [
+      {
+        "$oid": "01b0366f11e374ee60aa0d30"
+      },
+      {
+        "$oid": "305f8f5a8f7bf9cf64032d71"
+      },
+      {
+        "$oid": "22636f17171d1270b2192f57"
+      },
+      {
+        "$oid": "0cfea62eb6c3d440fa6a4498"
+      },
+      {
+        "$oid": "0d6945755ff90de10a28483d"
+      },
+      {
+        "$oid": "e5e7d1b0e7134959c911712c"
+      },
+      {
+        "$oid": "59a5883f46d530cb27e050be"
+      },
+      {
+        "$oid": "b27c9c976a9bb49edd62e5de"
+      },
+      {
+        "$oid": "a7435f46206d7d282f457fe3"
+      },
+      {
+        "$oid": "846050dafa0dd77120e7dbb4"
+      },
+      {
+        "$oid": "10bdff75dd93992015185749"
+      },
+      {
+        "$oid": "54b08d09c9f527147b7891c9"
+      },
+      {
+        "$oid": "a4d81be5025a6aba1a7ec6c4"
+      },
+      {
+        "$oid": "acda3f47a60d53522defabb0"
+      },
+      {
+        "$oid": "c4030c62f0d02614471bce98"
+      },
+      {
+        "$oid": "5dfc2ad5959ac93282641829"
+      },
+      {
+        "$oid": "aaa633880caad71abd894543"
+      },
+      {
+        "$oid": "a93acbf4debe06c3d8ec1440"
+      },
+      {
+        "$oid": "6ca4a318bc471b64dce50d24"
+      },
+      {
+        "$oid": "eceed765f6deed0f1c590d2b"
+      },
+      {
+        "$oid": "c794634c77e86ed1669aef8c"
+      },
+      {
+        "$oid": "89ac1c934590ce8584df26a4"
+      },
+      {
+        "$oid": "bd0c1ac768009fa46a5aa526"
+      },
+      {
+        "$oid": "4f2bece55700c8d99df9720b"
+      },
+      {
+        "$oid": "50e8544404a3fea7bb6ebe0c"
+      },
+      {
+        "$oid": "479916a2896af40ec372f229"
+      },
+      {
+        "$oid": "33cc4b238c5394931210f28b"
+      },
+      {
+        "$oid": "c5ee04b5c5efd482d773e12f"
+      },
+      {
+        "$oid": "1c26c209dedb4cf05209890d"
+      },
+      {
+        "$oid": "5736717a7a7cad602b04a2c2"
+      },
+      {
+        "$oid": "ce33011a916354020332382a"
+      },
+      {
+        "$oid": "46a676f0a184b3f441a56f72"
+      },
+      {
+        "$oid": "c35490bffb74a7e93b78d6e6"
+      },
+      {
+        "$oid": "8b2d138d368f00477b1765e6"
+      },
+      {
+        "$oid": "264194cc2badf9bc816c25c7"
+      },
+      {
+        "$oid": "fce5f1fb5efddb1813717a36"
+      },
+      {
+        "$oid": "66c8abca439bd1073d5fdd15"
+      },
+      {
+        "$oid": "6bd67abbe55219bdb365029c"
+      },
+      {
+        "$oid": "a7ca04aa9064ead709b17f2b"
+      },
+      {
+        "$oid": "48a7afbddc43eaffb741563b"
+      },
+      {
+        "$oid": "be0c6400606f1c28e92f837e"
+      },
+      {
+        "$oid": "13148b40aa1203b2d80ea2a1"
+      },
+      {
+        "$oid": "c024a193d4fc7f43d363abc9"
+      },
+      {
+        "$oid": "aab5d8db289b042f8bfbfd1b"
+      },
+      {
+        "$oid": "ee30fc0428315602c0d2b776"
+      },
+      {
+        "$oid": "d44e37a3da5bd89161422821"
+      }
+    ]
+  }
+]
